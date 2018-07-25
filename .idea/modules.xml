@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/testing-adapter/testing-adapter.iml" filepath="$PROJECT_DIR$/testing-adapter/testing-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semantiplatformtests/testing-adapter/testing-adapter.iml" filepath="$PROJECT_DIR$/semantiplatformtests/testing-adapter/testing-adapter.iml" />
+    </modules>
+  </component>
+</project>
