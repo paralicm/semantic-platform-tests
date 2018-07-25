@@ -1,5 +1,6 @@
 package sk.intersoft.vicinity.semptests;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.http.Header;
 import org.hamcrest.Matchers;
 import org.json.JSONObject;
@@ -10,6 +11,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -18,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -30,6 +33,8 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import sk.intersoft.vicinity.agent.thing.ThingDescription;
+import sk.intersoft.vicinity.agent.thing.ThingValidator;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -160,5 +165,22 @@ public class AdapterServiceImplTest {
                 .andExpect(jsonPath("$.thing-descriptions[0].actions", Matchers.hasSize(0)))
                 .andExpect(jsonPath("$.thing-descriptions[0].events", Matchers.hasSize(0)))
         ;
+    }
+
+    @Test
+    public void thingDescriptionSample2a_() throws Exception {
+/*
+        HttpGet request = new HttpGet(uri+"/agents/a3119d26-7ea7-4cbe-8a0d-d5d4b6c350b0/items");
+        request.addHeader("x-access-token", token);
+        HttpResponse response = client.execute(request);
+        JSONObject rjobj = new JSONObject(EntityUtils.toString(response.getEntity()));
+        JSONObject info = rjobj.getJSONArray("message").getJSONObject(0).getJSONObject("id").getJSONObject("info");
+*/
+        ClassLoader cl = getClass().getClassLoader();
+        String jsonString = IOUtils.toString(cl.getResourceAsStream("td-sample-2a.json"));
+        JSONObject obj = new JSONObject(jsonString);
+        ThingDescription td1 = ThingDescription.create(obj, new ThingValidator(false));
+
+        assertThat(td1 != null);
     }
 }

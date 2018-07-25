@@ -5,6 +5,9 @@
       <list>
         <option value="$PROJECT_DIR$/semantiplatformtests/pom.xml" />
         <option value="$PROJECT_DIR$/testing-adapter/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/utils/pom.xml" />
+        <option value="$PROJECT_DIR$/sp-tests/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

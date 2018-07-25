@@ -9,6 +9,8 @@
     <name>Semantic Platform Tests</name>
     <modules>
         <module>testing-adapter</module>
+        <module>utils</module>
+        <module>sp-tests</module>
     </modules>
     <artifactId>semantic-platform-tests</artifactId>
     <version>1.0-SNAPSHOT</version>
