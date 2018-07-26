@@ -18,9 +18,9 @@ public class ThingDescription {
 
     public String oid = null;
     public String infrastructureId = null;
-    public String adapterId = null;
-    public String adapterOID = null;
-    public String adapterInfrastructureID = null;
+    //public String adapterId = null;
+    //public String adapterOID = null;
+    //public String adapterInfrastructureID = null;
 
     public String name = null;
     public String password = null;
@@ -73,12 +73,12 @@ public class ThingDescription {
         infrastructureId = oid;
         oid = null;
 
-        adapterInfrastructureID = adapterOID;
-        adapterOID = null;
+        //adapterInfrastructureID = adapterOID;
+        //adapterOID = null;
     }
     public void updateCredentials(ThingDescription configThing) {
         oid = configThing.oid;
-        adapterOID = configThing.adapterOID;
+        //adapterOID = configThing.adapterOID;
         password = configThing.password;
     }
     /*
@@ -89,14 +89,14 @@ public class ThingDescription {
     */
     public void updateCreatedData(String oid, String password) {
         this.oid = oid;
-        this.adapterOID = identifier(oid, adapterId);
+        //this.adapterOID = identifier(oid, adapterId);
         this.password = password;
     }
 
     public boolean updateRecoveredData(JSONObject object) {
         try{
             infrastructureId = object.getString(INFRASTRUCTURE_KEY);
-            adapterInfrastructureID = identifier(infrastructureId, adapterId);
+            //adapterInfrastructureID = identifier(infrastructureId, adapterId);
             password = object.getString(PASSWORD_KEY);
             return true;
         }
@@ -121,10 +121,10 @@ public class ThingDescription {
             thing.oid = JSONUtil.getString(OID_KEY, thingJSON);
             if(thing.oid == null || thing.oid.equals("")) fail = validator.error("Missing thing [oid].");
 
-            thing.adapterId = JSONUtil.getString(ADAPTER_ID_KEY, thingJSON);
-            if(thing.adapterId == null || thing.adapterId.equals("")) fail = validator.error("Missing thing [adapter-id].");
-
-            thing.adapterOID = identifier(thing.oid, thing.adapterId);
+//            thing.adapterId = JSONUtil.getString(ADAPTER_ID_KEY, thingJSON);
+//            if(thing.adapterId == null || thing.adapterId.equals("")) fail = validator.error("Missing thing [adapter-id].");
+//
+//            thing.adapterOID = identifier(thing.oid, thing.adapterId);
 
 
             thing.type = JSONUtil.getString(TYPE_KEY, thingJSON);
@@ -210,7 +210,7 @@ public class ThingDescription {
 
         object.put(OID_KEY, thing.oid);
         object.put(TYPE_KEY, thing.type);
-        object.put(ADAPTER_ID_KEY, thing.adapterId);
+//        object.put(ADAPTER_ID_KEY, thing.adapterId);
         object.put(NAME_KEY, thing.name);
 
         for (Map.Entry<String, InteractionPattern> entry : thing.properties.entrySet()) {
@@ -244,9 +244,9 @@ public class ThingDescription {
         dump.add("THING :", indent);
         dump.add("oid: "+oid, (indent + 1));
         dump.add("infrastructure-id: "+infrastructureId, (indent + 1));
-        dump.add("adapter-id: "+adapterId, (indent + 1));
-        dump.add("adapter-oid: "+adapterOID, (indent + 1));
-        dump.add("adapter-infrastructure-id: "+adapterInfrastructureID, (indent + 1));
+//        dump.add("adapter-id: "+adapterId, (indent + 1));
+//        dump.add("adapter-oid: "+adapterOID, (indent + 1));
+//        dump.add("adapter-infrastructure-id: "+adapterInfrastructureID, (indent + 1));
         dump.add("type: "+type, (indent + 1));
         dump.add("name: "+name, (indent + 1));
         dump.add("password: "+password, (indent + 1));
@@ -281,7 +281,8 @@ public class ThingDescription {
     }
 
     public String toSimpleString(){
-        return "THING : [OID: "+oid+"][INFRA-ID: "+ infrastructureId +"][ADAPTER-ID: "+adapterId+"][ADAPTER-INFRA-ID: "+adapterInfrastructureID+"][PWD: "+password+"] ";
+        //return "THING : [OID: "+oid+"][INFRA-ID: "+ infrastructureId +"][ADAPTER-ID: "+adapterId+"][ADAPTER-INFRA-ID: "+adapterInfrastructureID+"][PWD: "+password+"] ";
+        return "THING : [OID: "+oid+"][INFRA-ID: "+ infrastructureId +"][PWD: "+password+"] ";
     }
 
     public JSONObject toStatusJSON() {
@@ -289,8 +290,8 @@ public class ThingDescription {
 
         object.put("oid", oid);
         object.put("infra-id", infrastructureId);
-        object.put("adapter-oid", adapterOID);
-        object.put("adapter-infra-id", adapterInfrastructureID);
+//        object.put("adapter-oid", adapterOID);
+//        object.put("adapter-infra-id", adapterInfrastructureID);
         object.put("password", password);
 
         return object;

@@ -6,21 +6,31 @@ import org.json.JSONObject;
 import sk.intersoft.vicinity.agent.thing.ThingDescription;
 import sk.intersoft.vicinity.agent.thing.ThingValidator;
 
-import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import static java.nio.file.StandardOpenOption.*;
 
 public class PrepareTDs {
-    String fileWithTD = "td-sample-2a.json";
+    String fileWithTD = "td-2a.json";
 
     public boolean prepareN(int n, String outFile) {
         try {
             ClassLoader cl = getClass().getClassLoader();
-            String jsonString = IOUtils.toString(cl.getResourceAsStream("td-sample-2a.json"));
+            String jsonString = IOUtils.toString(cl.getResourceAsStream("td-nm-2a.json"));
             JSONObject obj = new JSONObject(jsonString);
             ThingDescription td1 = ThingDescription.create(obj, new ThingValidator(false));
             if (td1 != null) {
-                File fout = File.cre
-
-            }
+                BufferedWriter out = new BufferedWriter(
+                        new OutputStreamWriter(
+                                Files.newOutputStream(Paths.get(outFile), CREATE, APPEND)));
+                out.write(td1.toString(3));
+                out.flush();
+                out.close();
+            } else
+                return false;
         } catch (Exception e) {
             Logger.logMsg(Logger.DEBUG, e.getMessage());
             return  false;

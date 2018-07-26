@@ -13,10 +13,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="semantic-platform-tests" target="1.5" />
-      <module name="sp-tests" target="1.5" />
-      <module name="testing-adapter" target="1.5" />
-      <module name="utils" target="1.5" />
+      <module name="semantic-platform-tests" target="1.8" />
+      <module name="sp-tests" target="7" />
+      <module name="testing-adapter" target="1.8" />
+      <module name="utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
