@@ -71,5 +71,5 @@ public interface AdapterService {
      *
      * @return
      */
-    Response getThingsDescription(String filename);
+    Response getThingsDescription();
 }

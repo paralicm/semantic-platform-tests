@@ -21,6 +21,7 @@ import org.apache.log4j.Logger;
 public class AdapterServiceImpl implements AdapterService {
 
     private static final Logger LOG = Logger.getLogger(AdapterServiceImpl.class);
+    public static String filename = "";
 
     @Override
     public Response postAction(String oid, String aid, Requests.ActionRequest request) {
@@ -77,9 +78,9 @@ public class AdapterServiceImpl implements AdapterService {
     }
 
     @Override
-    public Response getThingsDescription(String filename) {
+    public Response getThingsDescription() {
 
-        LOG.info("Inside getThingsDescription - TBD by each pilot depending on their VAS/Things...");
+        LOG.info("Inside getThingsDescription - Semantic tests: " + filename);
 
         ClassLoader cl = getClass().getClassLoader();
 

@@ -134,15 +134,16 @@ public class AdapterController {
     }
 
     /**
-     * @param name : name of the file with static info of the adapter status in form of json with TDs)
+     //* @param name : name of the file with static info of the adapter status in form of json with TDs)
      * @return
      * @throws Exception
      */
     @GetMapping(value = "/objects",
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public String generateResponseGetThingsDescription(@RequestParam(value="name", defaultValue="td-sample-2a.json") String name) throws Exception {
+    public String generateResponseGetThingsDescription() throws Exception {
+        //@RequestParam(value="name", defaultValue="td-sample-1.json") String name
 
-        Response resp_ = vasService_.getThingsDescription(name);
+        Response resp_ = vasService_.getThingsDescription();
         return resp_.getMessage();
     }
 

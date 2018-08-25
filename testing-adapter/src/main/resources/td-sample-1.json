@@ -90,6 +90,7 @@
           "pid":"pulse"
         }
       ],
+      "actions": [],
       "type":"adapters:BloodPressureMonitor",
       "version":"0.0.1"
     }
