@@ -1,0 +1,87 @@
+      THING :
+        oid: 296ed436-22db-4d52-82cf-43524a94f896
+        infrastructure-id: null
+        type: adapters:BloodPressureMonitor
+        name: ForaBloodPressureMonitor
+        password: null
+        PROPERTIES: 3
+          PROPERTY MAPPED KEY: diastolic
+          INTERACTION PATTERN:
+            id: diastolic
+            refers-to (monitors/affects): adapters:DiastolicBloodPressure
+            ENDPOINTS: 
+              read endpoint: 
+                endpoint:
+                  href: /objects/{oid}/properties/{pid}
+                  output: 
+                    data-schema:
+                      type: object
+                      description: null
+                      field: 2
+                        field:
+                            name: value
+                            schema: 
+                              data-schema:
+                                type: integer
+                                description: null
+                        field:
+                            name: timestamp
+                            schema: 
+                              data-schema:
+                                type: string
+                                description: null
+              write endpoint: unset
+          PROPERTY MAPPED KEY: systolic
+          INTERACTION PATTERN:
+            id: systolic
+            refers-to (monitors/affects): adapters:SystolicBloodPressure
+            ENDPOINTS: 
+              read endpoint: 
+                endpoint:
+                  href: /objects/{oid}/properties/{pid}
+                  output: 
+                    data-schema:
+                      type: object
+                      description: null
+                      field: 2
+                        field:
+                            name: value
+                            schema: 
+                              data-schema:
+                                type: integer
+                                description: null
+                        field:
+                            name: timestamp
+                            schema: 
+                              data-schema:
+                                type: string
+                                description: null
+              write endpoint: unset
+          PROPERTY MAPPED KEY: pulse
+          INTERACTION PATTERN:
+            id: pulse
+            refers-to (monitors/affects): adapters:HeartRate
+            ENDPOINTS: 
+              read endpoint: 
+                endpoint:
+                  href: /objects/{oid}/properties/{pid}
+                  output: 
+                    data-schema:
+                      type: object
+                      description: null
+                      field: 2
+                        field:
+                            name: value
+                            schema: 
+                              data-schema:
+                                type: integer
+                                description: null
+                        field:
+                            name: timestamp
+                            schema: 
+                              data-schema:
+                                type: string
+                                description: null
+              write endpoint: unset
+        ACTIONS: 0
+        EVENTS: 0
