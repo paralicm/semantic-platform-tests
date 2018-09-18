@@ -9,13 +9,25 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
+import java.util.Optional;
+
 public class AdapterClient {
 
-    private static String uri = "http://localhost:8030";
+    private static String uri = "http://localhost:";
     private static HttpClient client;
+
+    public AdapterClient(String port) {
+        try {
+            this.uri += port;
+            client = HttpClientBuilder.create().build();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public AdapterClient() {
         try {
+            this.uri += "8030";
             client = HttpClientBuilder.create().build();
         } catch (Exception e) {
             e.printStackTrace();

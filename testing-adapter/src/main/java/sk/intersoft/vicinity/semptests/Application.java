@@ -5,11 +5,20 @@
  */
 package sk.intersoft.vicinity.semptests;
 
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
+import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
 import sk.intersoft.vicinity.semptests.services.AdapterService;
 import sk.intersoft.vicinity.semptests.services.impl.AdapterServiceImpl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Properties;
 
 /**
  *
@@ -20,6 +29,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application implements Runnable {
 
     public String objects_TD = "";
+    public String port = "";
     /*
     public static void main(String[] args){
 
@@ -53,7 +63,13 @@ public class Application implements Runnable {
     */
 
     public void run() {
-        SpringApplication.run(Application.class);
+        if (port.equals(""))
+            port = "8030";
+        SpringApplication app = new SpringApplication(Application.class);
+        app.setDefaultProperties(Collections.singletonMap("server.port", port));
+        app.run(new String[]{});
+
+        //SpringApplication.run(Application.class);
         AdapterServiceImpl.filename = this.objects_TD;
         AdapterService service = new AdapterServiceImpl();
     }

@@ -9,9 +9,7 @@ import org.slf4j.LoggerFactory;
 import sk.intersoft.vicinity.agent.Dump;
 import sk.intersoft.vicinity.agent.JSONUtil;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ThingDescription {
     final static Logger logger = LoggerFactory.getLogger(ThingDescription.class.getName());
@@ -213,15 +211,23 @@ public class ThingDescription {
 //        object.put(ADAPTER_ID_KEY, thing.adapterId);
         object.put(NAME_KEY, thing.name);
 
-        for (Map.Entry<String, InteractionPattern> entry : thing.properties.entrySet()) {
+        List<Map.Entry<String, InteractionPattern>> properties = new ArrayList(thing.properties.entrySet());
+        Collections.sort(properties, (o1, o2) -> o1.getValue().id.compareTo(o2.getValue().id));
+        for (Map.Entry<String, InteractionPattern> entry : properties) {
             InteractionPattern pattern = entry.getValue();
             jsonProperties.put(InteractionPattern.propertyJSON(pattern));
         }
-        for (Map.Entry<String, InteractionPattern> entry : thing.actions.entrySet()) {
+
+        List<Map.Entry<String, InteractionPattern>> actions = new ArrayList(thing.actions.entrySet());
+        Collections.sort(actions, (o1, o2) -> o1.getValue().id.compareTo(o2.getValue().id));
+        for (Map.Entry<String, InteractionPattern> entry : actions) {
             InteractionPattern pattern = entry.getValue();
             jsonActions.put(InteractionPattern.actionJSON(pattern));
         }
-        for (Map.Entry<String, InteractionPattern> entry : thing.events.entrySet()) {
+
+        List<Map.Entry<String, InteractionPattern>> events = new ArrayList(thing.events.entrySet());
+        Collections.sort(events, (o1, o2) -> o1.getValue().id.compareTo(o2.getValue().id));
+        for (Map.Entry<String, InteractionPattern> entry : events) {
             InteractionPattern pattern = entry.getValue();
             jsonEvents.put(InteractionPattern.eventJSON(pattern));
         }
@@ -242,7 +248,7 @@ public class ThingDescription {
         Dump dump = new Dump();
 
         dump.add("THING :", indent);
-        dump.add("oid: "+oid, (indent + 1));
+        //dump.add("oid: "+oid, (indent + 1));
         dump.add("infrastructure-id: "+infrastructureId, (indent + 1));
 //        dump.add("adapter-id: "+adapterId, (indent + 1));
 //        dump.add("adapter-oid: "+adapterOID, (indent + 1));
@@ -251,19 +257,25 @@ public class ThingDescription {
         dump.add("name: "+name, (indent + 1));
         dump.add("password: "+password, (indent + 1));
         dump.add("PROPERTIES: "+properties.size(), (indent + 1));
-        for (Map.Entry<String, InteractionPattern> entry : properties.entrySet()) {
+        List<Map.Entry<String, InteractionPattern>> propertiesList = new ArrayList(properties.entrySet());
+        Collections.sort(propertiesList, (o1, o2) -> o1.getValue().id.compareTo(o2.getValue().id));
+        for (Map.Entry<String, InteractionPattern> entry : propertiesList) {
             String id = entry.getKey();
             dump.add("PROPERTY MAPPED KEY: "+id, (indent + 2));
             dump.add(entry.getValue().toString(indent + 2));
         }
         dump.add("ACTIONS: "+actions.size(), (indent + 1));
-        for (Map.Entry<String, InteractionPattern> entry : actions.entrySet()) {
+        List<Map.Entry<String, InteractionPattern>> actionsList = new ArrayList(actions.entrySet());
+        Collections.sort(actionsList, (o1, o2) -> o1.getValue().id.compareTo(o2.getValue().id));
+        for (Map.Entry<String, InteractionPattern> entry : actionsList) {
             String id = entry.getKey();
             dump.add("ACTION MAPPED KEY: "+id, (indent + 2));
             dump.add(entry.getValue().toString(indent + 2));
         }
         dump.add("EVENTS: "+events.size(), (indent + 1));
-        for (Map.Entry<String, InteractionPattern> entry : events.entrySet()) {
+        List<Map.Entry<String, InteractionPattern>> eventsList = new ArrayList(events.entrySet());
+        Collections.sort(eventsList, (o1, o2) -> o1.getValue().id.compareTo(o2.getValue().id));
+        for (Map.Entry<String, InteractionPattern> entry : eventsList) {
             String id = entry.getKey();
             dump.add("EVENT MAPPED KEY: "+id, (indent + 2));
             dump.add(entry.getValue().toString(indent + 2));
