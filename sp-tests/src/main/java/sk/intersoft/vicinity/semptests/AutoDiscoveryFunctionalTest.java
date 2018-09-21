@@ -166,7 +166,8 @@ public class AutoDiscoveryFunctionalTest {
         long finish = System.currentTimeMillis();
         long timeElapsed = finish - start;
 
-        LOG.info(String.format("Test duration: %d ", timeElapsed));
+        LOG.info(String.format("Test duration: %s", String.format("%02d:%02d:%02d.%d", timeElapsed/(3600*1000),
+                timeElapsed/(60*1000) % 60, timeElapsed/1000 % 60, timeElapsed%1000)));
 
         //stop the agent
         try {
