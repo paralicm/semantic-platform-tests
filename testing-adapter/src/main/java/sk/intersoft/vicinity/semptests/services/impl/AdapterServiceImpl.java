@@ -21,7 +21,12 @@ import org.apache.log4j.Logger;
 public class AdapterServiceImpl implements AdapterService {
 
     private static final Logger LOG = Logger.getLogger(AdapterServiceImpl.class);
-    public static String filename = "";
+    public String filename = "";
+
+    public AdapterServiceImpl(String file) {
+        LOG.info("Inside AdapterServiceImpl: " + file + "--> " + filename + ".");
+        filename = file;
+    }
 
     @Override
     public Response postAction(String oid, String aid, Requests.ActionRequest request) {
@@ -87,7 +92,7 @@ public class AdapterServiceImpl implements AdapterService {
         String thingsDescription = "";
         try {
             thingsDescription = IOUtils
-                    //.toString(cl.getResourceAsStream("td-sample.json"));
+                    //.toString(cl.getResourceAsStream("td-sample-01.json"));
                     .toString(cl.getResourceAsStream(filename));
         } catch (Exception ex) {
             LOG.error("Unable to load Things Description...");

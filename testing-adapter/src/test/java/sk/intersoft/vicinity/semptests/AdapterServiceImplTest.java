@@ -1,11 +1,10 @@
 package sk.intersoft.vicinity.semptests;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.http.Header;
 import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.junit.After;
-import org.junit.Before;
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -20,12 +19,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -78,7 +74,7 @@ public class AdapterServiceImplTest {
     @Test
     public void thingDescriptionSample() throws Exception {
 
-        this.mockMvc.perform(get("/objects").param("name", "td-sample.json"))
+        this.mockMvc.perform(get("/objects").param("name", "td-sample-01.json"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))

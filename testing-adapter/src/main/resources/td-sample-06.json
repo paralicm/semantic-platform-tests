@@ -1,0 +1,1282 @@
+{
+  "adapter-id": "is-wp6-test01-adapter06",
+  "thing-descriptions": [
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-001-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-002-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },{
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-003-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-004-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-005-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-006-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-007-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-008-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-009-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-010-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-011-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-012-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-013-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-014-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-015-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-016-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-017-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-018-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-019-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-020-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-021-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "6_co2-sensor-022-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    },
+    {
+      "oid": "6_cb44b166-0d3a-49cc-bcec-d88e354640be",
+      "name": "Door sensor 004",
+      "type": "core:Device",
+      "version": "0.1",
+      "keywords": [
+        "door",
+        "sensor"
+      ],
+      "properties": [
+        {
+          "pid": "state",
+          "monitors": "adapters:EntryExit",
+          "read_link": {
+            "href": "/objects/cb44b166-0d3a-49cc-bcec-d88e354640be/properties/state",
+            "output": {
+              "type": "object",
+              "description": "state of the door",
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "eid": "door_activity",
+          "monitors": "adapters:EntryExit",
+          "output": {
+            "type": "object",
+            "description": "state of the door",
+            "field": [
+              {
+                "name": "value",
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "timestamp",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "events": [],
+      "actions": [],
+      "oid": "6_bloodpressure",
+      "name": "ForaBloodPressureMonitor",
+      "properties": [
+        {
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "mediaType": "application/json",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "mmHg",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          },
+          "monitors": "adapters:SystolicBloodPressure",
+          "pid": "systolic"
+        },
+        {
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "mediaType": "application/json",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "mmHg",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          },
+          "monitors": "adapters:DiastolicBloodPressure",
+          "pid": "diastolic"
+        },
+        {
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "mediaType": "application/json",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "bpm",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          },
+          "monitors": "adapters:HeartRate",
+          "pid": "pulse"
+        }
+      ],
+      "type": "adapters:BloodPressureMonitor",
+      "version": "0.0.1"
+    },
+    {
+      "oid": "6_b6463811-30b3-4906-9c0b-efe2928651f7",
+      "name": "sensor.getName",
+      "type": "core:Device",
+      "properties": [{
+        "pid": "status",
+        "monitors": "adapters:DeviceStatus",
+        "read_link": {
+          "href": "/device/b6463811-30b3-4906-9c0b-efe2928651f7/property/status",
+          "output": {
+            "type": "object",
+            "field": [{
+              "name": "property",
+              "schema": {
+                "type": "string"
+              }
+            }, {
+              "name": "value",
+              "schema": {
+                "type": "integer"
+              }
+            }]
+          }
+        },
+        "write_link": {
+          "href": "/device/b6463811-30b3-4906-9c0b-efe2928651f7/property/status",
+          "input": {
+            "type": "object",
+            "field": [{
+              "name": "value",
+              "schema": {
+                "type": "integer"
+              }
+            }]
+          },
+          "output": {
+            "type": "object",
+            "field": [{
+              "name": "success",
+              "schema": {
+                "type": "boolean"
+              }
+            }]
+          }
+        }
+      }],
+      "actions": [],
+      "events": []
+    },
+    {
+      "name": "VAS 3.2.2 - Urban Marathon",
+      "type": "core:Service",
+      "version": "0.0.1",
+      "oid": "6_vas3.2.2",
+      "properties": [
+        {
+          "pid": "push_measurement",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "Register-user",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "Get-rules",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "user_ranking",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "get_points_for_user",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        }],
+      "actions": [],
+      "events": []
+    }
+  ]
+}

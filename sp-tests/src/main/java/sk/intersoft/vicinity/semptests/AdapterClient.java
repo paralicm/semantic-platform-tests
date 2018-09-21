@@ -9,12 +9,10 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
-import java.util.Optional;
-
 public class AdapterClient {
 
-    private static String uri = "http://localhost:";
-    private static HttpClient client;
+    private String uri = "http://localhost:";
+    private HttpClient client;
 
     public AdapterClient(String port) {
         try {

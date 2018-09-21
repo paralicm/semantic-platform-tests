@@ -5,6 +5,7 @@
  */
 package sk.intersoft.vicinity.semptests.controllers;
 
+import org.springframework.beans.factory.annotation.Value;
 import sk.intersoft.vicinity.semptests.pojos.Requests.ActionRequest;
 import sk.intersoft.vicinity.semptests.pojos.Requests.PropertyRequest;
 import sk.intersoft.vicinity.semptests.pojos.Response;
@@ -27,7 +28,10 @@ public class AdapterController {
 
     private static final Logger LOG = Logger.getLogger(AdapterController.class);
 
-    private final AdapterService vasService_ = new AdapterServiceImpl();
+    @Value("${td-file}")
+    private String tdFile;
+
+    private AdapterService vasService_ = null;
 
     /**
      *
@@ -43,6 +47,8 @@ public class AdapterController {
     public Response generateResponseAction(@PathVariable("oid") String oid, @PathVariable("aid") String aid,
                                            @RequestBody ActionRequest request) throws Exception {
 
+        if (vasService_ == null)
+            this.vasService_ = new AdapterServiceImpl(tdFile);
         Response resp_ = vasService_.postAction(oid, aid, request);
         return resp_;
     }
@@ -60,6 +66,8 @@ public class AdapterController {
     public Response generateResponseGetActionTask(@PathVariable("oid") String oid,
                                                   @PathVariable("aid") String aid, @PathVariable("tid") String tid) throws Exception {
 
+        if (vasService_ == null)
+            this.vasService_ = new AdapterServiceImpl(tdFile);
         Response resp_ = vasService_.getActionTask(oid, aid, tid);
         return resp_;
     }
@@ -77,6 +85,8 @@ public class AdapterController {
     public Response generateResponseDeleteActionTask(@PathVariable("oid") String oid,
                                                      @PathVariable("aid") String aid, @PathVariable("tid") String tid) throws Exception {
 
+        if (vasService_ == null)
+            this.vasService_ = new AdapterServiceImpl(tdFile);
         Response resp_ = vasService_.deleteActionTask(oid, aid, tid);
         return resp_;
     }
@@ -93,6 +103,8 @@ public class AdapterController {
     public Response generateResponseGetProperty(@PathVariable("oid") String oid,
                                                 @PathVariable("pid") String pid) throws Exception {
 
+        if (vasService_ == null)
+            this.vasService_ = new AdapterServiceImpl(tdFile);
         Response resp_ = vasService_.getProperty(oid, pid);
         return resp_;
     }
@@ -111,6 +123,8 @@ public class AdapterController {
     public Response generateResponsePutProperty(@PathVariable("oid") String oid, @PathVariable("pid") String pid,
                                                 @RequestBody PropertyRequest request) throws Exception {
 
+        if (vasService_ == null)
+            this.vasService_ = new AdapterServiceImpl(tdFile);
         Response resp_ = vasService_.putProperty(oid, pid, request);
         return resp_;
     }
@@ -129,6 +143,8 @@ public class AdapterController {
     public Response generateResponsePutEvent(@PathVariable("oid") String oid, @PathVariable("eid") String eid,
                                              @RequestBody PropertyRequest request) throws Exception {
 
+        if (vasService_ == null)
+            this.vasService_ = new AdapterServiceImpl(tdFile);
         Response resp_ = vasService_.putEvent(oid, eid, request);
         return resp_;
     }
@@ -143,6 +159,9 @@ public class AdapterController {
     public String generateResponseGetThingsDescription() throws Exception {
         //@RequestParam(value="name", defaultValue="td-sample-1.json") String name
 
+        if (vasService_ == null)
+            this.vasService_ = new AdapterServiceImpl(tdFile);
+        LOG.info("----***----> AdapterController - generateResponseGetThingsDescription: " + tdFile + ".");
         Response resp_ = vasService_.getThingsDescription();
         return resp_.getMessage();
     }
