@@ -14,12 +14,12 @@ import java.nio.file.Paths;
 import static java.nio.file.StandardOpenOption.*;
 
 public class PrepareTDs {
-    String fileWithTD = "td-2a.json";
+    String fileWithTD = "agent-config-10a.json";
 
     public boolean prepareN(int n, String outFile) {
         try {
             ClassLoader cl = getClass().getClassLoader();
-            String jsonString = IOUtils.toString(cl.getResourceAsStream("td-nm-2a.json"));
+            String jsonString = IOUtils.toString(cl.getResourceAsStream("agent-config-empty.json"));
             JSONObject obj = new JSONObject(jsonString);
             ThingDescription td1 = ThingDescription.create(obj, new ThingValidator(false));
             if (td1 != null) {

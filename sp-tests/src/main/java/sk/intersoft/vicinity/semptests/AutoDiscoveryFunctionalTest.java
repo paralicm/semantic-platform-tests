@@ -12,10 +12,12 @@ import sk.intersoft.vicinity.semptests.controllers.AdapterController;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.OutputStreamWriter;
+import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
+import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import static java.nio.file.StandardOpenOption.*;
 
 public class AutoDiscoveryFunctionalTest {
@@ -98,18 +100,7 @@ public class AutoDiscoveryFunctionalTest {
 
 
         //start the agent
-        ProcessBuilder builder = new ProcessBuilder();
-        builder.command("sh", "-c", System.getProperty("user.home")+"/vicinity/agent/agent.sh");
-        builder.directory(new File(System.getProperty("user.home")+"/vicinity/agent/"));
-        //builder.redirectOutput(new File(System.getProperty("user.home")+"/vicinity/out.txt"));
-        //builder.redirectError(new File(System.getProperty("user.home")+"/vicinity/err.txt"));
-        try {
-            Process process = builder.start();
-            process.waitFor();
-        } catch (Exception e) {
-            System.out.println("Error by starting the agent: " + e.getMessage());
-            System.exit(100);
-        }
+        startAgent("agent-config-10a.json");
         System.out.println("Agent started!");
         //just wait a little bit for agent to start
         try {
@@ -171,6 +162,7 @@ public class AutoDiscoveryFunctionalTest {
 
         //stop the agent
         try {
+            ProcessBuilder builder = new ProcessBuilder();
             builder.command("sh", "-c", System.getProperty("user.home")+"/vicinity/agent/agent.sh stop");
             Process process = builder.start();
         } catch (Exception e) {
@@ -190,13 +182,34 @@ public class AutoDiscoveryFunctionalTest {
             System.out.println(String.format("Adapter %d stopped!", t.getId()));
         }
 
-
-        //just wait a little bit before end the test
+        //start the empty agent
+        startAgent("agent-config-empty.json");
+        System.out.println("Agent started!");
+        //just wait a little bit for agent to start
         try {
-            Thread.sleep(10000);
+            Thread.sleep(200000);
         } catch (Exception ex) {}
 
         System.exit(0);
+    }
+
+    private static void startAgent(String agentConfigFile) {
+        ProcessBuilder builder = new ProcessBuilder();
+        builder.command("sh", "-c", System.getProperty("user.home")+"/vicinity/agent/agent.sh");
+        builder.directory(new File(System.getProperty("user.home")+"/vicinity/agent/"));
+        //builder.redirectError(new File(System.getProperty("user.home")+"/vicinity/err.txt"));
+        ClassLoader classLoader = AutoDiscoveryFunctionalTest.class.getClassLoader();
+        try {
+            Files.copy(
+                    new File( classLoader.getResource(agentConfigFile).getFile()).toPath(),
+                    new File(System.getProperty("user.home")+"/vicinity/agent/config/agents/agent-01.json").toPath(),
+                    REPLACE_EXISTING);
+            Process process = builder.start();
+            process.waitFor();
+        } catch (Exception e) {
+            System.out.println("Error by starting the agent: " + e.getMessage());
+            System.exit(100);
+        }
     }
 
     private static void saveListOfTDs(List<JSONObject> tdList, BufferedWriter out) throws Exception {
