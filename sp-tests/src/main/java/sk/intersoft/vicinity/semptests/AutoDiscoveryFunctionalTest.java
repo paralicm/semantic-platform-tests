@@ -100,7 +100,8 @@ public class AutoDiscoveryFunctionalTest {
 
 
         //start the agent
-        startAgent("agent-config-10a.json");
+        ProcessBuilder builder = new ProcessBuilder();
+        startAgent( builder, "agent-config-10a.json");
         System.out.println("Agent started!");
         //just wait a little bit for agent to start
         try {
@@ -162,7 +163,6 @@ public class AutoDiscoveryFunctionalTest {
 
         //stop the agent
         try {
-            ProcessBuilder builder = new ProcessBuilder();
             builder.command("sh", "-c", System.getProperty("user.home")+"/vicinity/agent/agent.sh stop");
             Process process = builder.start();
         } catch (Exception e) {
@@ -183,7 +183,7 @@ public class AutoDiscoveryFunctionalTest {
         }
 
         //start the empty agent
-        startAgent("agent-config-empty.json");
+        startAgent( builder, "agent-config-empty.json");
         System.out.println("Agent started!");
         //just wait a little bit for agent to start
         try {
@@ -193,8 +193,7 @@ public class AutoDiscoveryFunctionalTest {
         System.exit(0);
     }
 
-    private static void startAgent(String agentConfigFile) {
-        ProcessBuilder builder = new ProcessBuilder();
+    private static void startAgent(ProcessBuilder builder, String agentConfigFile) {
         builder.command("sh", "-c", System.getProperty("user.home")+"/vicinity/agent/agent.sh");
         builder.directory(new File(System.getProperty("user.home")+"/vicinity/agent/"));
         //builder.redirectError(new File(System.getProperty("user.home")+"/vicinity/err.txt"));
