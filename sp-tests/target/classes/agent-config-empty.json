@@ -1,17 +1,13 @@
 {
   "credentials": {
-    "agent-id": "f9e6065b-e241-4da2-8a57-32a329d67676",
+    "agent-id": "526a6e8f-2dfc-4e18-a7d8-7914f3da2a66",
     "password": "test01"
   },
   "adapters": [
     {
-      "adapter-id": "is-wp6-test01-adapter-2empty",
+      "adapter-id": "is-wp6-test01-7-adapter01-empty-05",
       "active-discovery": true,
-      "endpoint": "http://localhost:8040",
-      "events": {
-        "channels": [],
-        "subscriptions": []
-      }
+      "events": {}
     }
   ]
 }

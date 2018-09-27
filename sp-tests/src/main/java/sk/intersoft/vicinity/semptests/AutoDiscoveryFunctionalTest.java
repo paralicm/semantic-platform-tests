@@ -39,15 +39,59 @@ public class AutoDiscoveryFunctionalTest {
     private static int numberOfAdapters = 10;
 
 
-
+/*
     public static void main(String [ ] args) {
+        long start = System.currentTimeMillis();
+
+//        ArrayList<Thread> adapters = new ArrayList<Thread>();
+//
+//        //TODO: generovat objects_TD podla slovnikov pre property a actions & events
+//        List<JSONObject> tdListA = new ArrayList<JSONObject>();
+//        for (int i = 1; i <= numberOfAdapters; i++) {
+//            Application adapter = new Application();
+//            adapter.objects_TD = String.format("td-sample-%02d.json", i);
+//            adapter.port = String.valueOf(adapterPort + i - 1);
+//            Thread t1 = new Thread(adapter);
+//            adapters.add(t1);
+//            t1.start();
+//            //just wait for adapter to start
+//            try {
+//                Thread.sleep(1000);
+//            } catch (Exception ex) {
+//            }
+//            System.out.println(String.format("Adapter %02d started!", i));
+//        }
+
+        //start the empty agent
+        ProcessBuilder builder3 = new ProcessBuilder();
+        startAgent(builder3, "agent-config-empty.json");
+        System.out.println("Agent started!");
+        //just wait a little bit for agent to start
+        try {
+            Thread.sleep(100000);
+        } catch (Exception ex) {
+        }
+
+        getAgentItemsFromNM(agentIDs[6], "itemsFromNM-empty.json");
+        System.out.println(String.format("Reponse from NM processed!"));
+
+        long finish = System.currentTimeMillis();
+        long timeElapsed = finish - start;
+
+        LOG.info(String.format("Test duration: %s", String.format("%02d:%02d:%02d.%d\n\n", timeElapsed / (3600 * 1000),
+                timeElapsed / (60 * 1000) % 60, timeElapsed / 1000 % 60, timeElapsed % 1000)));
+    }
+*/
+
+
+    public static void main(String[] args) {
         long start = System.currentTimeMillis();
 
         ArrayList<Thread> adapters = new ArrayList<Thread>();
 
         //TODO: generovat objects_TD podla slovnikov pre property a actions & events
         List<JSONObject> tdListA = new ArrayList<JSONObject>();
-        for (int i = 1; i <= numberOfAdapters; i++  ) {
+        for (int i = 1; i <= numberOfAdapters; i++) {
             Application adapter = new Application();
             adapter.objects_TD = String.format("td-sample-%02d.json", i);
             adapter.port = String.valueOf(adapterPort + i - 1);
@@ -56,17 +100,16 @@ public class AutoDiscoveryFunctionalTest {
             t1.start();
             //just wait for adapter to start
             try {
-                Thread.sleep(7000);
+                Thread.sleep(4000);
             } catch (Exception ex) {
             }
             System.out.println(String.format("Adapter %02d started!", i));
         }
 
-
         //get data from the Adapters and save it in the file
-        for (int i = 1; i <= numberOfAdapters; i++  ) {
+        for (int i = 1; i <= numberOfAdapters; i++) {
             try {
-                AdapterClient adapterClient = new AdapterClient(String.valueOf(adapterPort+i-1));
+                AdapterClient adapterClient = new AdapterClient(String.valueOf(adapterPort + i - 1));
                 JSONObject itemsFromAdapter = adapterClient.getObjects();
                 //System.out.println(itemsFromAdapter.toString());
                 JSONArray thingDescriptions = itemsFromAdapter.getJSONArray("thing-descriptions");
@@ -81,10 +124,10 @@ public class AutoDiscoveryFunctionalTest {
             System.out.println(String.format("Reponse from Adapter %02d processed!", i));
         }
 
-        Collections.sort( tdListA, new JsonCompare());
+        Collections.sort(tdListA, new JsonCompare());
         BufferedWriter outA = null;
         try {
-            outA= new BufferedWriter(
+            outA = new BufferedWriter(
                     new OutputStreamWriter(
                             Files.newOutputStream(
                                     Paths.get(String.format("itemsFromAdapter-%02d.json", 1)),
@@ -98,42 +141,20 @@ public class AutoDiscoveryFunctionalTest {
         }
 
 
-
         //start the agent
         ProcessBuilder builder = new ProcessBuilder();
-        startAgent( builder, "agent-config-10a.json");
+        startAgent(builder, "agent-config-10a.json");
         System.out.println("Agent started!");
         //just wait a little bit for agent to start
         try {
-            Thread.sleep(200000);
-        } catch (Exception ex) {}
-
+            Thread.sleep(220000);
+        } catch (Exception ex) {
+        }
 
 
         //get data from Network Manager and save it int outFileNM
         //for (int i = 0; i < 1; i++  ) {
-        try {
-            NMclient nmClient = new NMclient();
-            JSONObject itemsFromNM = nmClient.getAgentItems(agentIDs[3]);
-            System.out.println(itemsFromNM.toString());
-
-            JSONArray message = itemsFromNM.getJSONArray("message");
-            List<JSONObject> tdList = new ArrayList<JSONObject>();
-            for (int j = 0; j < message.length(); j++) {
-                tdList.add(message.getJSONObject(j).getJSONObject("id").getJSONObject("info"));
-            }
-            Collections.sort(tdList, new JsonCompare());
-            BufferedWriter out = new BufferedWriter(
-                    new OutputStreamWriter(
-                            Files.newOutputStream(
-                                    Paths.get(String.format("itemsFromNM-%02d.json", 1)),
-                                    CREATE, TRUNCATE_EXISTING, WRITE)));
-            saveListOfTDs(tdList, out);
-            out.close();
-        } catch (Exception e) {
-            System.out.println(String.format("Error by processing the response from NM %d: %s", 1, e.getMessage()));
-            System.exit(101);
-        }
+        getAgentItemsFromNM(agentIDs[6], "itemsFromNM.json");
         System.out.println(String.format("Reponse from NM %d processed!", 1));
         //}
 
@@ -144,7 +165,7 @@ public class AutoDiscoveryFunctionalTest {
         try {
             result = FileUtils.contentEquals(
                     new File(String.format("itemsFromAdapter-%02d.json", 1)),
-                    new File(String.format("itemsFromNM-%02d.json", 1)));
+                    new File(String.format("itemsFromNM.json")));
         } catch (Exception e) {
             System.out.println(String.format("Error by comparing the results of %02d. adapter and NM: %s", 1, e.getMessage()));
             result = false;
@@ -155,16 +176,11 @@ public class AutoDiscoveryFunctionalTest {
         //PrepareTDs prepare = new PrepareTDs();
         //prepare.prepareN(1, "./adapter1-nm.txt");
 
-        long finish = System.currentTimeMillis();
-        long timeElapsed = finish - start;
-
-        LOG.info(String.format("Test duration: %s", String.format("%02d:%02d:%02d.%d", timeElapsed/(3600*1000),
-                timeElapsed/(60*1000) % 60, timeElapsed/1000 % 60, timeElapsed%1000)));
-
         //stop the agent
+        ProcessBuilder builder2 = new ProcessBuilder();
         try {
-            builder.command("sh", "-c", System.getProperty("user.home")+"/vicinity/agent/agent.sh stop");
-            Process process = builder.start();
+            builder2.command("sh", "-c", System.getProperty("user.home") + "/vicinity/agent/agent.sh stop");
+            Process process = builder2.start();
         } catch (Exception e) {
             System.out.println("Error by stopping the agent: " + e.getMessage());
             System.exit(-1);
@@ -183,28 +199,66 @@ public class AutoDiscoveryFunctionalTest {
         }
 
         //start the empty agent
-        startAgent( builder, "agent-config-empty.json");
+        ProcessBuilder builder3 = new ProcessBuilder();
+        startAgent(builder3, "agent-config-empty.json");
         System.out.println("Agent started!");
         //just wait a little bit for agent to start
         try {
-            Thread.sleep(200000);
-        } catch (Exception ex) {}
+            Thread.sleep(100000);
+        } catch (Exception ex) {
+        }
+
+        //get data from Network Manager and save it int outFileNM
+        //for (int i = 0; i < 1; i++  ) {
+        getAgentItemsFromNM(agentIDs[6], "itemsFromNM-empty.json");
+        System.out.println(String.format("Reponse from NM processed!"));
+
+        long finish = System.currentTimeMillis();
+        long timeElapsed = finish - start;
+
+        LOG.info(String.format("Test duration: %s", String.format("%02d:%02d:%02d.%d\n\n", timeElapsed / (3600 * 1000),
+                timeElapsed / (60 * 1000) % 60, timeElapsed / 1000 % 60, timeElapsed % 1000)));
 
         System.exit(0);
     }
 
+    private static void getAgentItemsFromNM(String agentID, String fileName) {
+        try {
+            NMclient nmClient = new NMclient();
+            JSONObject itemsFromNM = nmClient.getAgentItems(agentID);
+
+            JSONArray message = itemsFromNM.getJSONArray("message");
+            List<JSONObject> tdList = new ArrayList<JSONObject>();
+            for (int j = 0; j < message.length(); j++) {
+                tdList.add(message.getJSONObject(j).getJSONObject("id").getJSONObject("info"));
+            }
+            Collections.sort(tdList, new JsonCompare());
+            BufferedWriter out = new BufferedWriter(
+                    new OutputStreamWriter(
+                            Files.newOutputStream(
+                                    Paths.get(fileName),
+                                    CREATE, TRUNCATE_EXISTING, WRITE)));
+            saveListOfTDs(tdList, out);
+            out.close();
+        } catch (Exception e) {
+            System.out.println(String.format("Error by processing the response from NM %d: %s", 1, e.getMessage()));
+            System.exit(101);
+        }
+    }
+
     private static void startAgent(ProcessBuilder builder, String agentConfigFile) {
-        builder.command("sh", "-c", System.getProperty("user.home")+"/vicinity/agent/agent.sh");
-        builder.directory(new File(System.getProperty("user.home")+"/vicinity/agent/"));
+        builder.command("sh", "-c", System.getProperty("user.home") + "/vicinity/agent/agent.sh");
+        builder.directory(new File(System.getProperty("user.home") + "/vicinity/agent/"));
         //builder.redirectError(new File(System.getProperty("user.home")+"/vicinity/err.txt"));
         ClassLoader classLoader = AutoDiscoveryFunctionalTest.class.getClassLoader();
         try {
             Files.copy(
-                    new File( classLoader.getResource(agentConfigFile).getFile()).toPath(),
-                    new File(System.getProperty("user.home")+"/vicinity/agent/config/agents/agent-01.json").toPath(),
+                    new File(classLoader.getResource(agentConfigFile).getFile()).toPath(),
+                    new File(System.getProperty("" +
+                            "user.home") + "/vicinity/agent/config/agents/agent-01.json").toPath(),
                     REPLACE_EXISTING);
             Process process = builder.start();
-            process.waitFor();
+            //process.waitFor();
         } catch (Exception e) {
             System.out.println("Error by starting the agent: " + e.getMessage());
             System.exit(100);
