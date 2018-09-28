@@ -1,0 +1,41 @@
+{
+  "adapter-id": "is-wp6-test01.8-adapter-007",
+  "thing-descriptions": [
+    {
+      "name": "My Sample CO2 Sensor Thing",
+      "type": "core:Device",
+      "version": "0.0.1",
+      "oid": "co2-sensor-019-sample-oid",
+      "properties": [
+        {
+          "pid": "prop",
+          "monitors": "adapters:CO2Concentration",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "ppm",
+                    "type": "double"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          }
+        }
+      ],
+      "events": [],
+      "actions": []
+    }
+  ]
+}

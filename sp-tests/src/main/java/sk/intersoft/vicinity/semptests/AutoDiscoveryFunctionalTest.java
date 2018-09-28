@@ -7,17 +7,14 @@ import org.json.JSONObject;
 import sk.intersoft.vicinity.agent.JsonCompare;
 import sk.intersoft.vicinity.agent.thing.ThingDescription;
 import sk.intersoft.vicinity.agent.thing.ThingValidator;
-import sk.intersoft.vicinity.semptests.controllers.AdapterController;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.OutputStreamWriter;
-import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
-import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import static java.nio.file.StandardOpenOption.*;
 
 public class AutoDiscoveryFunctionalTest {
@@ -36,7 +33,8 @@ public class AutoDiscoveryFunctionalTest {
             "1d2b9e77-ff16-445e-a317-96fb20557d1f"
     };
     private static String[] agentConfigs = new String[]{
-            "td-sample-01.json",
+            "td-sample.json"
+            /*"td-sample-01.json",
             "td-sample-02.json",
             "td-sample-03.json",
             "td-sample-04.json",
@@ -45,55 +43,9 @@ public class AutoDiscoveryFunctionalTest {
             "td-sample-07.json",
             "td-sample-08.json",
             "td-sample-09.json",
-            "td-sample-10.json"
+            "td-sample-10.json"*/
     };
     private static int adapterPort = 8040;
-    private static int numberOfAdapters = 10;
-
-
-/*
-    public static void main(String [ ] args) {
-        long start = System.currentTimeMillis();
-
-//        ArrayList<Thread> adapters = new ArrayList<Thread>();
-//
-//        //TODO: generovat objects_TD podla slovnikov pre property a actions & events
-//        List<JSONObject> tdListA = new ArrayList<JSONObject>();
-//        for (int i = 1; i <= numberOfAdapters; i++) {
-//            Application adapter = new Application();
-//            adapter.objects_TD = String.format("td-sample-%02d.json", i);
-//            adapter.port = String.valueOf(adapterPort + i - 1);
-//            Thread t1 = new Thread(adapter);
-//            adapters.add(t1);
-//            t1.start();
-//            //just wait for adapter to start
-//            try {
-//                Thread.sleep(1000);
-//            } catch (Exception ex) {
-//            }
-//            System.out.println(String.format("Adapter %02d started!", i));
-//        }
-
-        //start the empty agent
-        ProcessBuilder builder3 = new ProcessBuilder();
-        startAgent(builder3, "agent-config-empty.json");
-        System.out.println("Agent started!");
-        //just wait a little bit for agent to start
-        try {
-            Thread.sleep(100000);
-        } catch (Exception ex) {
-        }
-
-        getAgentItemsFromNM(agentIDs[6], "itemsFromNM-empty.json");
-        System.out.println(String.format("Reponse from NM processed!"));
-
-        long finish = System.currentTimeMillis();
-        long timeElapsed = finish - start;
-
-        LOG.info(String.format("Test duration: %s", String.format("%02d:%02d:%02d.%d\n\n", timeElapsed / (3600 * 1000),
-                timeElapsed / (60 * 1000) % 60, timeElapsed / 1000 % 60, timeElapsed % 1000)));
-    }
-*/
 
 
     public static void main(String[] args) {
@@ -112,29 +64,29 @@ public class AutoDiscoveryFunctionalTest {
             t1.start();
             //just wait for adapter to start
             try {
-                Thread.sleep(4000);
+                Thread.sleep(6000);
             } catch (Exception ex) {
             }
-            System.out.println(String.format("Adapter with config from %s started!", agentConfigs[i]));
+            LOG.info(String.format("Adapter with config from %s started!", agentConfigs[i]));
         }
 
         //get data from the Adapters and save it in the file
-        for (int i = 0; i < numberOfAdapters; i++) {
+        for (int i = 0; i < agentConfigs.length; i++) {
             try {
                 AdapterClient adapterClient = new AdapterClient(String.valueOf(adapterPort + i));
                 JSONObject itemsFromAdapter = adapterClient.getObjects();
-                //System.out.println(itemsFromAdapter.toString());
+                //LOG.info(itemsFromAdapter.toString());
                 JSONArray thingDescriptions = itemsFromAdapter.getJSONArray("thing-descriptions");
 
                 for (int j = 0; j < thingDescriptions.length(); j++) {
                     tdListA.add(thingDescriptions.getJSONObject(j));
                 }
             } catch (Exception e) {
-                System.out.println("Error by processing the response from Adapter from config " +
+                LOG.info("Error by processing the response from Adapter from config " +
                         agentConfigs[i] + ": " +e.getMessage());
                 System.exit(102);
             }
-            System.out.println(String.format("Reponse from Adapter with config %s processed!", agentConfigs[i]));
+            LOG.info(String.format("Reponse from Adapter with config %s processed!", agentConfigs[i]));
         }
 
         Collections.sort(tdListA, new JsonCompare());
@@ -148,26 +100,27 @@ public class AutoDiscoveryFunctionalTest {
             saveListOfTDs(tdListA, outA);
             outA.close();
         } catch (Exception e) {
-            System.out.println("Error by processing the response from adapters: " + e.getMessage());
+            LOG.info("Error by processing the response from adapters: " + e.getMessage());
             e.printStackTrace();
             System.exit(103);
         }
 
 
         //start the agent with all adapters
-        RunAgent agentAllAdapters = new RunAgent("agent-config-10a.json");
+        RunAgent agentAllAdapters = new RunAgent("agent-config.json");
         agentAllAdapters.start();
-        System.out.println("Agent with all adapters started!");
+        LOG.info("Agent with all adapters started!");
         //just wait a little bit for agent to start
         try {
-            Thread.sleep(220000);
+            Thread.sleep(24000*agentConfigs.length);
         } catch (Exception ex) {
         }
 
 
-        //get data from Network Manager and save it int outFileNM
-        getAgentItemsFromNM(agentIDs[6], "itemsFromNM.json");
-        System.out.println(String.format("Reponse from NM processed!"));
+        //get data from Network Manager and save it
+        int numberOfTDs;
+        numberOfTDs = getAgentItemsFromNM(agentIDs[7], "itemsFromNM.json");
+        LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[7], numberOfTDs));
 
 
         //compare the results between adapters and NM
@@ -177,45 +130,49 @@ public class AutoDiscoveryFunctionalTest {
                     new File(String.format("itemsFromAdapters.json")),
                     new File(String.format("itemsFromNM.json")));
         } catch (Exception e) {
-            System.out.println(String.format("Error by comparing the results of %02d. adapter and NM: %s", 1, e.getMessage()));
+            LOG.info(String.format("Error by comparing the results of adapters and NM: %s", e.getMessage()));
             result = false;
         }
-        System.out.println(String.format("Comparing the results of %02d. adapter and NM: %s.", 1, result ? "MATCH" : "DIFFER"));
+        LOG.info(String.format("Comparing the results of adapters and NM: %s.", result ? "MATCH" : "DIFFER"));
 
 
         //stop the agent with all adapters
         agentAllAdapters.stop();
-        System.out.println("Agent with all adapters stopped!");
+        LOG.info("Agent with all adapters stopped!");
 
         //stop the adapters
         for (Thread t : adapters) {
             try {
                 t.stop();
             } catch (Exception e) {
-                System.out.println(String.format("Error by stopping the adapter %d: %s!", t.getId(), e.getMessage()));
+                LOG.info(String.format("Error by stopping the adapter %d: %s!", t.getId(), e.getMessage()));
                 System.exit(-1);
             }
-            System.out.println(String.format("Adapter %d stopped!", t.getId()));
+            LOG.info(String.format("Adapter %d stopped!", t.getId()));
+        }
+        //just wait a little bit for agent to start
+        try {
+            Thread.sleep(5000);
+        } catch (Exception ex) {
         }
 
         //start the empty agent
         RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json");
         agentEmptyAdapter.start();
-        System.out.println("Agent with empty adapter started!");
+        LOG.info("Agent with empty adapter started!");
         //just wait a little bit for agent to start
         try {
-            Thread.sleep(100000);
+            Thread.sleep(25000);
         } catch (Exception ex) {
         }
 
-        //get data from Network Manager and save it int outFileNM
-        //for (int i = 0; i < 1; i++  ) {
-        getAgentItemsFromNM(agentIDs[6], "itemsFromNM-empty.json");
-        System.out.println(String.format("Reponse from NM processed!"));
+        //get data from Network Manager and save it
+        numberOfTDs = getAgentItemsFromNM(agentIDs[7], "itemsFromNM-empty.json");
+        LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[7], numberOfTDs));
 
         //stop agent with empty adapter
         agentEmptyAdapter.stop();
-        System.out.println("Agent with empty adapter stopped!");
+        LOG.info("Agent with empty adapter stopped!");
 
         long finish = System.currentTimeMillis();
         long timeElapsed = finish - start;
@@ -226,7 +183,7 @@ public class AutoDiscoveryFunctionalTest {
         System.exit(0);
     }
 
-    private static void getAgentItemsFromNM(String agentID, String fileName) {
+    private static int getAgentItemsFromNM(String agentID, String fileName) {
         try {
             NMclient nmClient = new NMclient();
             JSONObject itemsFromNM = nmClient.getAgentItems(agentID);
@@ -244,10 +201,12 @@ public class AutoDiscoveryFunctionalTest {
                                     CREATE, TRUNCATE_EXISTING, WRITE)));
             saveListOfTDs(tdList, out);
             out.close();
+            return tdList.size();
         } catch (Exception e) {
-            System.out.println(String.format("Error by processing the response from NM %d: %s", 1, e.getMessage()));
+            LOG.info(String.format("Error by processing the response from NM %d: %s", 1, e.getMessage()));
             System.exit(101);
         }
+        return 0;
     }
 
     private static void saveListOfTDs(List<JSONObject> tdList, BufferedWriter out) throws Exception {

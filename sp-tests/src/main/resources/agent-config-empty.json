@@ -1,11 +1,11 @@
 {
   "credentials": {
-    "agent-id": "526a6e8f-2dfc-4e18-a7d8-7914f3da2a66",
+    "agent-id": "c0a065f8-1c18-4392-aae8-a32ad5bf6a9e",
     "password": "test01"
   },
   "adapters": [
     {
-      "adapter-id": "is-wp6-test01-7-adapter01-empty-08",
+      "adapter-id": "is-wp6-test01.8-adapter-empty",
       "active-discovery": true,
       "events": {}
     }

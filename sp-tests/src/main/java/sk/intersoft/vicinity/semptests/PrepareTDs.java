@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 import static java.nio.file.StandardOpenOption.*;
 
 public class PrepareTDs {
-    String fileWithTD = "agent-config-10a.json";
+    String fileWithTD = "agent-config-10.json";
 
     public boolean prepareN(int n, String outFile) {
         try {

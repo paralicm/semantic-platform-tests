@@ -1,0 +1,22 @@
+{
+  "credentials": {
+    "agent-id": "c0a065f8-1c18-4392-aae8-a32ad5bf6a9e",
+    "password": "test01"
+  },
+  "adapters": [
+    {
+      "adapter-id": "is-wp6-test01.8-adapter-007",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8040",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   },
   "adapters": [
     {
-      "adapter-id": "is-wp6-test01-7-adapter01",
+      "adapter-id": "is-wp6-test01.4-adapter001",
       "active-discovery": false,
       "endpoint": "http://localhost:8040",
       "events": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter02",
+      "adapter-id": "is-wp6-test01.4-adapter002",
       "active-discovery": false,
       "endpoint": "http://localhost:8041",
       "events": {
@@ -33,7 +33,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter03",
+      "adapter-id": "is-wp6-test01.4-adapter003",
       "active-discovery": false,
       "endpoint": "http://localhost:8042",
       "events": {
@@ -47,7 +47,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter04",
+      "adapter-id": "is-wp6-test01.4-adapter004",
       "active-discovery": false,
       "endpoint": "http://localhost:8043",
       "events": {
@@ -61,7 +61,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter05",
+      "adapter-id": "is-wp6-test01.4-adapter005",
       "active-discovery": false,
       "endpoint": "http://localhost:8044",
       "events": {
@@ -75,7 +75,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter06",
+      "adapter-id": "is-wp6-test01.4-adapter006",
       "active-discovery": false,
       "endpoint": "http://localhost:8045",
       "events": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter07",
+      "adapter-id": "is-wp6-test01.4-adapter007",
       "active-discovery": false,
       "endpoint": "http://localhost:8046",
       "events": {
@@ -103,7 +103,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter08",
+      "adapter-id": "is-wp6-test01.4-adapter008",
       "active-discovery": false,
       "endpoint": "http://localhost:8047",
       "events": {
@@ -117,7 +117,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter09",
+      "adapter-id": "is-wp6-test01.4-adapter009",
       "active-discovery": false,
       "endpoint": "http://localhost:8048",
       "events": {
@@ -131,7 +131,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01-7-adapter10",
+      "adapter-id": "is-wp6-test01.4-adapter010",
       "active-discovery": false,
       "endpoint": "http://localhost:8049",
       "events": {
