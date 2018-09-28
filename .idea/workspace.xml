@@ -2,34 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dee5f4f-f3ec-4a9c-919b-92939aa5806c" name="Default Changelist" comment="json -&gt; ThingDesription --&gt; Dump">
+      <change afterPath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemsFromNM-01.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itemsFromAdapter-01.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itemsFromNM-empty.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itemsFromNM.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-10a.json" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-10a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sp-tests/target/classes/agent-config-10a.json" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/target/classes/agent-config-10a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sp-tests/target/classes/agent-config-empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/target/classes/agent-config-empty.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sp-tests/target/classes/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/target/classes/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-01.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-01.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-02.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-02.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-03.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-03.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-04.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-04.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-05.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-05.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-06.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-06.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-07.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-07.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-08.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-08.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-09.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-09.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-10.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-01.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-01.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-02.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-02.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-03.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-03.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-04.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-04.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-05.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-05.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-06.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-06.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-07.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-07.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-08.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-08.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-09.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-09.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-10.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing-adapter/target/classes/td-sample-10.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/semantiplatformtests/target/" />
     <ignored path="$PROJECT_DIR$/semantiplatformtests/testing-adapter/target/" />
@@ -158,15 +139,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4967" />
-          <entry key="json" value="220" />
+          <entry key="java" value="5825" />
+          <entry key="json" value="223" />
           <entry key="properties" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4967" />
-          <entry key="JSON" value="220" />
+          <entry key="JAVA" value="5825" />
+          <entry key="JSON" value="223" />
           <entry key="Properties" value="12" />
         </counts>
       </usages-collector>
@@ -174,7 +155,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="iml" value="4" />
-          <entry key="java" value="28" />
+          <entry key="java" value="29" />
           <entry key="json" value="90" />
           <entry key="properties" value="4" />
           <entry key="xml" value="3" />
@@ -184,7 +165,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="29" />
           <entry key="JSON" value="90" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="3" />
@@ -194,11 +175,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+            <state relative-caret-position="171">
+              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#8395#8407#0" expanded="true" />
@@ -208,10 +189,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -266,7 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/semantiplatformtests/testing-adapter/src/main/resources/thing-description-general-template.json" />
         <option value="$PROJECT_DIR$/semantiplatformtests/testing-adapter/src/test/java/AdapterServiceImplTest.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/ThingDescription.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/sk/intersoft/vicinity/agent/thing/ThingValidator.java" />
@@ -315,8 +307,9 @@
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-08.json" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-09.json" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-10.json" />
-        <option value="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" />
+        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" />
         <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" />
+        <option value="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" />
       </list>
     </option>
   </component>
@@ -377,8 +370,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="341" />
-    <option name="y" value="74" />
+    <option name="x" value="340" />
+    <option name="y" value="72" />
     <option name="width" value="1816" />
     <option name="height" value="1315" />
   </component>
@@ -532,7 +525,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538067209765" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538126714371" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -671,7 +664,7 @@
       <workItem from="1537522347989" duration="82000" />
       <workItem from="1537534237765" duration="2390000" />
       <workItem from="1537775460207" duration="6523000" />
-      <workItem from="1537961030167" duration="15268000" />
+      <workItem from="1537961030167" duration="20223000" />
     </task>
     <task id="LOCAL-00001" summary="json -&gt; ThingDesription --&gt; Dump">
       <created>1532601340854</created>
@@ -710,7 +703,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111917000" />
+    <option name="totallyTimeSpent" value="116872000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -722,10 +715,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="341" y="74" width="1816" height="1315" extended-state="0" />
+    <frame x="340" y="72" width="1816" height="1315" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27062148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27062148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -735,7 +728,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299578" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49839056" visible="true" weight="0.32827005" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839056" visible="true" weight="0.32827005" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4967811" weight="0.39915612" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -798,13 +791,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/test/java/sk/intersoft/vicinity/agent/thing/ThingDescriptionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1079,21 +1065,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json">
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="630">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+        <state relative-caret-position="171">
+          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#8395#8407#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
