@@ -244,11 +244,12 @@ public class ThingDescription {
         return o;
     }
 
-    public String toString(int indent){
+    public String toString(int indent, boolean withOID){
         Dump dump = new Dump();
 
         dump.add("THING :", indent);
-        //dump.add("oid: "+oid, (indent + 1));
+        if (withOID)
+            dump.add("oid: "+oid, (indent + 1));
         dump.add("infrastructure-id: "+infrastructureId, (indent + 1));
 //        dump.add("adapter-id: "+adapterId, (indent + 1));
 //        dump.add("adapter-oid: "+adapterOID, (indent + 1));
