@@ -26,7 +26,7 @@ public class PrepareTDs {
                 BufferedWriter out = new BufferedWriter(
                         new OutputStreamWriter(
                                 Files.newOutputStream(Paths.get(outFile), CREATE, APPEND)));
-                out.write(td1.toString(3));
+                out.write(td1.toString(3, false));
                 out.flush();
                 out.close();
             } else

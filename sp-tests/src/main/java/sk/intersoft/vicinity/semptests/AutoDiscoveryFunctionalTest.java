@@ -21,20 +21,13 @@ public class AutoDiscoveryFunctionalTest {
     private static final Logger LOG = Logger.getLogger(AutoDiscoveryFunctionalTest.class);
 
     private static String[] agentIDs = new String[]{
-            "f4734225-25af-4337-905d-179fbc41ea8e",
-            "2d131e4f-616c-43a4-a433-389d5abd04c7",
-            "ed1cdc0c-9fff-4de1-b493-460a6ee3a285",
-            "f9e6065b-e241-4da2-8a57-32a329d67676",
-            "b07d74e1-0ef1-4eaf-ac95-6e66b99ad682",
-            "9ce835cc-bdc4-418f-8ba0-cc4d3ef97813",
-            "526a6e8f-2dfc-4e18-a7d8-7914f3da2a66",
-            "c0a065f8-1c18-4392-aae8-a32ad5bf6a9e",
+            "25d95474-7ddf-40f8-8f52-f4ecd3751aa0",
             "c1aa668e-38ff-405d-a1dd-fbc09168ec74",
             "1d2b9e77-ff16-445e-a317-96fb20557d1f"
     };
     private static String[] agentConfigs = new String[]{
-            "td-sample.json"
-            /*"td-sample-01.json",
+//            "td-sample.json"
+            "td-sample-01.json" /*,
             "td-sample-02.json",
             "td-sample-03.json",
             "td-sample-04.json",
@@ -43,11 +36,11 @@ public class AutoDiscoveryFunctionalTest {
             "td-sample-07.json",
             "td-sample-08.json",
             "td-sample-09.json",
-            "td-sample-10.json"*/
+            "td-sample-10.json" */
     };
     private static int adapterPort = 8040;
     private static boolean updateTypeTest = false; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
-    private static boolean cleanAgentAfterTest = false; //if true, delete all items from agent
+    private static boolean cleanAgentAfterTest = true; //if true, delete all items from agent
 
 
     public static void main(String[] args) {
@@ -123,11 +116,11 @@ public class AutoDiscoveryFunctionalTest {
         int numberOfTDs;
         if (!updateTypeTest)
         {
-            numberOfTDs = getAgentItemsFromNM(agentIDs[7], "itemsFromNM.json", true);
+            numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM.json", false);
         } else {
-            numberOfTDs = getAgentItemsFromNM(agentIDs[7], "itemsFromNM2.json", true);
+            numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM2.json", true);
         }
-        LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[7], numberOfTDs));
+        LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[0], numberOfTDs));
 
 
         //compare the results between adapters and NM
@@ -170,7 +163,6 @@ public class AutoDiscoveryFunctionalTest {
             LOG.info(String.format("Adapter %d stopped!", t.getId()));
         }
 
-
         if (cleanAgentAfterTest) {
             //start the empty agent
             RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json");
@@ -183,8 +175,8 @@ public class AutoDiscoveryFunctionalTest {
             }
 
             //get data from Network Manager and save it
-            numberOfTDs = getAgentItemsFromNM(agentIDs[7], "itemsFromNM-empty.json", true);
-            LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[7], numberOfTDs));
+            numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM-empty.json", false);
+            LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[0], numberOfTDs));
 
             //stop agent with empty adapter
             agentEmptyAdapter.stop();

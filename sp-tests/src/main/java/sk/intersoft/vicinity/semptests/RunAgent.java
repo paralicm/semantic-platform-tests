@@ -31,7 +31,7 @@ public class RunAgent implements Runnable {
         builder.directory(new File(System.getProperty("user.home") + "/vicinity/agent/"));
 //        builder.redirectError(new File(System.getProperty("user.home")+
 //                "/vicinity/agent/err" + Thread.currentThread().getId() + ".txt"));
-//       builder.redirectOutput(new File(System.getProperty("user.home")+
+//        builder.redirectOutput(new File(System.getProperty("user.home")+
 //                "/vicinity/agent/out" + Thread.currentThread().getId()+".txt"));
         ClassLoader classLoader = AutoDiscoveryFunctionalTest.class.getClassLoader();
         try {
@@ -41,8 +41,8 @@ public class RunAgent implements Runnable {
                             "user.home") + "/vicinity/agent/config/agents/agent-01.json").toPath(),
                     REPLACE_EXISTING);
             agentProcess = builder.start();
-            agentProcess.waitFor();
-            LOG.info(String.format("after waitFor in run() - %s", agentConfigFile));
+            //agentProcess.waitFor();
+            //LOG.info(String.format("after waitFor in run() - %s", agentConfigFile));
         } catch (Exception e) {
             System.out.println("Error by starting the agent: " + e.getMessage());
             System.exit(100);
@@ -61,7 +61,12 @@ public class RunAgent implements Runnable {
 //            counter++;
             Process process = builder2.start();
             process.waitFor();
-            LOG.info(String.format("after waitFor in stop() - %s", agentConfigFile));
+            //LOG.info(String.format("after waitFor in stop() - %s", agentConfigFile));
+            //just wait a little bit
+            try {
+                Thread.sleep(5000);
+            } catch (Exception ex) {
+            }
         } catch (Exception e) {
             System.out.println("Error by stopping the agent: " + e.getMessage());
         }
