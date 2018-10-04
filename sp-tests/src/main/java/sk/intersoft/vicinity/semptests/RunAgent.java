@@ -13,7 +13,7 @@ public class RunAgent implements Runnable {
     private Process agentProcess;
     private String agentConfigFile;
     private ProcessBuilder builder;
-//    private static int counter = 1;
+    private static int counter = 1;
 
     public RunAgent(String agentConfigFile) {
         this.builder = new ProcessBuilder();
@@ -41,7 +41,7 @@ public class RunAgent implements Runnable {
                             "user.home") + "/vicinity/agent/config/agents/agent-01.json").toPath(),
                     REPLACE_EXISTING);
             agentProcess = builder.start();
-            //agentProcess.waitFor();
+            agentProcess.waitFor();
             //LOG.info(String.format("after waitFor in run() - %s", agentConfigFile));
         } catch (Exception e) {
             System.out.println("Error by starting the agent: " + e.getMessage());
@@ -62,15 +62,15 @@ public class RunAgent implements Runnable {
             Process process = builder2.start();
             process.waitFor();
             //LOG.info(String.format("after waitFor in stop() - %s", agentConfigFile));
-            //just wait a little bit
-            try {
-                Thread.sleep(5000);
-            } catch (Exception ex) {
-            }
         } catch (Exception e) {
             System.out.println("Error by stopping the agent: " + e.getMessage());
         }
+        //just wait a little bit for agent to run
+        try {
+            Thread.sleep(5000);
+        } catch (Exception ex) {
+        }
         agentProcess.destroy();
-        //threadForAgent.stop();
+        threadForAgent.stop();
     }
 }

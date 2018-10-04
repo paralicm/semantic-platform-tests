@@ -27,7 +27,7 @@ public class AutoDiscoveryFunctionalTest {
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
-            "td-sample-01.json" /*,
+            "td-sample-01.json" ,
             "td-sample-02.json",
             "td-sample-03.json",
             "td-sample-04.json",
@@ -36,7 +36,7 @@ public class AutoDiscoveryFunctionalTest {
             "td-sample-07.json",
             "td-sample-08.json",
             "td-sample-09.json",
-            "td-sample-10.json" */
+            "td-sample-10.json"
     };
     private static int adapterPort = 8040;
     private static boolean updateTypeTest = false; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
@@ -150,6 +150,11 @@ public class AutoDiscoveryFunctionalTest {
 
         //stop the agent with all adapters
         agentAllAdapters.stop();
+        //just wait a little bit
+        try {
+            Thread.sleep(8000 * agentConfigs.length);
+        } catch (Exception ex) {
+        }
         LOG.info("Agent with all adapters stopped!");
 
         //stop the adapters
@@ -163,14 +168,20 @@ public class AutoDiscoveryFunctionalTest {
             LOG.info(String.format("Adapter %d stopped!", t.getId()));
         }
 
+        //just wait a little bit
+        try {
+            Thread.sleep(5000);
+        } catch (Exception ex) {
+        }
+
         if (cleanAgentAfterTest) {
             //start the empty agent
             RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json");
             agentEmptyAdapter.start();
             LOG.info("Agent with empty adapter started!");
-            //just wait a little bit for agent to start
+            //just wait a little bit for agent to run
             try {
-                Thread.sleep(25000);
+                Thread.sleep(8000 * agentConfigs.length);
             } catch (Exception ex) {
             }
 
