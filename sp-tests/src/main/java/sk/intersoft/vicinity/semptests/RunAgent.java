@@ -58,7 +58,7 @@ public class RunAgent implements Runnable {
             agentProcess.destroy();
             return;
         }
-        
+
         ProcessBuilder builder2 = new ProcessBuilder();
         try {
             builder2.command("sh", "-c", System.getProperty("user.home") + "/vicinity/agent/agent.sh stop");
