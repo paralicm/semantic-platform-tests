@@ -42,6 +42,7 @@ public class AutoDiscoveryFunctionalTest {
     private static int adapterPort = 8040;
     private static boolean updateTypeTest = false; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
     private static boolean cleanAgentAfterTest = true; //if true, delete all items from agent
+    public static boolean WINDOWS = false;
 
 
     public static void main(String[] args) {
@@ -150,13 +151,16 @@ public class AutoDiscoveryFunctionalTest {
 
 
         //stop the agent with all adapters
-        agentAllAdapters.stop();
-        //just wait a little bit
-        try {
-            Thread.sleep(8000 * agentConfigs.length);
-        } catch (Exception ex) {
+        if (!WINDOWS) {
+            agentAllAdapters.stop();
+            //just wait a little bit
+            try {
+                Thread.sleep(8000 * agentConfigs.length);
+            } catch (Exception ex) {
+            }
+            LOG.info("Agent with all adapters stopped!");
         }
-        LOG.info("Agent with all adapters stopped!");
+
 
         //stop the adapters
         for (Thread t : adapters) {
@@ -175,7 +179,7 @@ public class AutoDiscoveryFunctionalTest {
         } catch (Exception ex) {
         }
 
-        if (cleanAgentAfterTest) {
+        if (cleanAgentAfterTest && !WINDOWS) {
             //start the empty agent
             RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json");
             agentEmptyAdapter.start();

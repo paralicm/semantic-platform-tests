@@ -27,7 +27,11 @@ public class RunAgent implements Runnable {
 
     @Override
     public void run() {
-        builder.command("sh", "-c", System.getProperty("user.home") + "/vicinity/agent/agent.sh");
+        if (AutoDiscoveryFunctionalTest.WINDOWS) {
+            builder.command(System.getProperty("user.home")+"/vicinity/agent/agent.bat", "", "");
+        } else {
+            builder.command("sh", "-c", System.getProperty("user.home") + "/vicinity/agent/agent.sh");
+        }
         builder.directory(new File(System.getProperty("user.home") + "/vicinity/agent/"));
 //        builder.redirectError(new File(System.getProperty("user.home")+
 //                "/vicinity/agent/err" + Thread.currentThread().getId() + ".txt"));
@@ -50,6 +54,11 @@ public class RunAgent implements Runnable {
     }
 
     public void stop() {
+        if (AutoDiscoveryFunctionalTest.WINDOWS) {
+            agentProcess.destroy();
+            return;
+        }
+        
         ProcessBuilder builder2 = new ProcessBuilder();
         try {
             builder2.command("sh", "-c", System.getProperty("user.home") + "/vicinity/agent/agent.sh stop");

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dee5f4f-f3ec-4a9c-919b-92939aa5806c" name="Default Changelist" comment="json -&gt; ThingDesription --&gt; Dump">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/semantiplatformtests/target/" />
     <ignored path="$PROJECT_DIR$/semantiplatformtests/testing-adapter/target/" />
@@ -132,20 +130,21 @@
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7092" />
+          <entry key="java" value="7106" />
           <entry key="json" value="987" />
           <entry key="properties" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7092" />
+          <entry key="JAVA" value="7106" />
           <entry key="JSON" value="987" />
           <entry key="Properties" value="12" />
         </counts>
@@ -174,20 +173,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="810">
+              <caret line="192" column="55" lean-forward="true" selection-start-line="192" selection-start-column="55" selection-end-line="192" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="612">
+              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -314,7 +313,6 @@
         <option value="$PROJECT_DIR$/utils/src/main/java/sk/intersoft/vicinity/agent/thing/ThingDescription.java" />
         <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/PrepareTDs.java" />
         <option value="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-10.json" />
-        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-01.json" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-03.json" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-05.json" />
@@ -325,9 +323,10 @@
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-10.json" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-04.json" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-02.json" />
-        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" />
         <option value="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config.json" />
         <option value="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" />
+        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" />
+        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" />
       </list>
     </option>
   </component>
@@ -402,8 +401,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -577,6 +574,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -733,6 +732,7 @@
       <workItem from="1538500490009" duration="598000" />
       <workItem from="1538637642811" duration="14453000" />
       <workItem from="1538750462817" duration="1021000" />
+      <workItem from="1538810616511" duration="941000" />
     </task>
     <task id="LOCAL-00001" summary="json -&gt; ThingDesription --&gt; Dump">
       <created>1532601340854</created>
@@ -771,7 +771,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161927000" />
+    <option name="totallyTimeSpent" value="162868000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -784,8 +784,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="264" y="55" width="1954" height="1315" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26519915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2683438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1118,52 +1119,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-02.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="764" column="6" selection-start-line="764" selection-start-column="6" selection-end-line="764" selection-end-column="6" />
-          <folding>
-            <element signature="e#79#3331#0" />
-            <element signature="e#3337#6589#0" />
-            <element signature="e#6595#9847#0" />
-            <element signature="e#9853#13105#0" />
-            <element signature="e#13111#16363#0" />
-            <element signature="e#16369#19621#0" />
-            <element signature="e#19627#22879#0" />
-            <element signature="e#22885#26137#0" />
-            <element signature="e#26143#29395#0" />
-            <element signature="e#29401#32653#0" />
-            <element signature="e#32659#35911#0" />
-            <element signature="e#35917#39169#0" />
-            <element signature="e#39175#42427#0" />
-            <element signature="e#42433#45685#0" />
-            <element signature="e#45691#48943#0" />
-            <element signature="e#48949#52201#0" />
-            <element signature="e#52207#55459#0" />
-            <element signature="e#55465#58717#0" />
-            <element signature="e#58723#61975#0" />
-            <element signature="e#61981#65233#0" />
-            <element signature="e#65239#68491#0" />
-            <element signature="e#68497#71749#0" />
-            <element signature="e#71755#75007#0" />
-            <element signature="e#75013#78265#0" />
-            <element signature="e#78271#81523#0" />
-            <element signature="e#81529#84781#0" />
-            <element signature="e#84787#88039#0" />
-            <element signature="e#88045#91297#0" />
-            <element signature="e#91303#94555#0" />
-            <element signature="e#94561#97813#0" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="192" column="55" lean-forward="true" selection-start-line="192" selection-start-column="55" selection-end-line="192" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1181,10 +1147,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="612">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
