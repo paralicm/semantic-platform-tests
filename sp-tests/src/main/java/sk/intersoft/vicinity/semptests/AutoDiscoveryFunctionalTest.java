@@ -40,7 +40,7 @@ public class AutoDiscoveryFunctionalTest {
             "td-sample-10.json"
     };
     private static int adapterPort = 8040;
-    private static boolean updateTypeTest = true; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
+    private static boolean updateTypeTest = false; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
     private static boolean cleanAgentAfterTest = true; //if true, delete all items from agent
     public static boolean WINDOWS = false;
 

@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dee5f4f-f3ec-4a9c-919b-92939aa5806c" name="Default Changelist" comment="json -&gt; ThingDesription --&gt; Dump">
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/ConsoleOutput.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/agent-2018-10-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/gateway-api-0.6.2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/itemsFromAdapters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/itemsFromNM-empty.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/itemsFromNM.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/itemsFromNM2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/itemsFromNM2withOIDs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux-Patch/itemsFromNMwithOIDs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux/ConsoleOutput.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux/agent-2018-10-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux/gateway-api-0.6.2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux/itemsFromAdapters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux/itemsFromNM-empty.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/06102018/Test01-1Agent10Adapters-Linux/itemsFromNM.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/semantiplatformtests/target/" />
     <ignored path="$PROJECT_DIR$/semantiplatformtests/testing-adapter/target/" />
@@ -153,14 +137,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7128" />
+          <entry key="java" value="7164" />
           <entry key="json" value="987" />
           <entry key="properties" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7128" />
+          <entry key="JAVA" value="7164" />
           <entry key="JSON" value="987" />
           <entry key="Properties" value="12" />
         </counts>
@@ -192,8 +176,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+            <state relative-caret-position="486">
+              <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -403,10 +387,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="264" />
-    <option name="y" value="55" />
+    <option name="x" value="262" />
+    <option name="y" value="27" />
     <option name="width" value="1954" />
-    <option name="height" value="1315" />
+    <option name="height" value="1309" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -603,7 +587,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538843870422" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539008371339" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -748,7 +732,7 @@
       <workItem from="1538500490009" duration="598000" />
       <workItem from="1538637642811" duration="14453000" />
       <workItem from="1538750462817" duration="1021000" />
-      <workItem from="1538810616511" duration="3904000" />
+      <workItem from="1538810616511" duration="6555000" />
     </task>
     <task id="LOCAL-00001" summary="json -&gt; ThingDesription --&gt; Dump">
       <created>1532601340854</created>
@@ -787,7 +771,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165831000" />
+    <option name="totallyTimeSpent" value="168482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -799,7 +783,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="264" y="55" width="1954" height="1315" extended-state="0" />
+    <frame x="262" y="27" width="1954" height="1309" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2683438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -811,7 +796,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299578" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49839056" visible="true" weight="0.32827005" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49839056" visible="true" weight="0.32994062" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4967811" weight="0.39915612" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -819,7 +804,7 @@
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946353" weight="0.32911393" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49892703" weight="0.32911393" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5032189" side_tool="true" weight="0.39945653" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49517167" weight="0.32827005" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49517167" weight="0.32824427" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49946353" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.2514768" />
@@ -1167,8 +1152,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        <state relative-caret-position="486">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
         </state>
       </provider>
     </entry>
