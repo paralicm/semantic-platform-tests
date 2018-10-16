@@ -28,7 +28,7 @@ public class AutoDiscoveryFunctionalTest {
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
-            "td-sample-01.json" ,
+            "td-sample-01.json",
             "td-sample-02.json",
             "td-sample-03.json",
             "td-sample-04.json",
@@ -118,11 +118,11 @@ public class AutoDiscoveryFunctionalTest {
         int numberOfTDs;
         if (!updateTypeTest)
         {
-            numberOfTDs = getAgentItemsFromNM(agentIDs[1], "itemsFromNM.json", false);
+            numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM.json", false);
         } else {
-            numberOfTDs = getAgentItemsFromNM(agentIDs[1], "itemsFromNM2.json", true);
+            numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM2.json", true);
         }
-        LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[1], numberOfTDs));
+        LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[0], numberOfTDs));
 
 
         //compare the results between adapters and NM
@@ -191,8 +191,8 @@ public class AutoDiscoveryFunctionalTest {
             }
 
             //get data from Network Manager and save it
-            numberOfTDs = getAgentItemsFromNM(agentIDs[1], "itemsFromNM-empty.json", false);
-            LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[1], numberOfTDs));
+            numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM-empty.json", false);
+            LOG.info(String.format("Agent %s has %d TDs registered at NM!", agentIDs[0], numberOfTDs));
 
             //stop agent with empty adapter
             agentEmptyAdapter.stop();
