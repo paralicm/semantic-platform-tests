@@ -3,8 +3,8 @@ package sk.intersoft.vicinity.semptests;
 import com.sun.media.jfxmedia.logging.Logger;
 import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;
-import sk.intersoft.vicinity.agent.thing.ThingDescription;
-import sk.intersoft.vicinity.agent.thing.ThingValidator;
+import sk.intersoft.vicinity.agentTest.thing.ThingDescription;
+import sk.intersoft.vicinity.agentTest.thing.ThingValidator;
 
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
