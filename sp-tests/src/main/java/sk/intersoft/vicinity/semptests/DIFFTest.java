@@ -217,8 +217,8 @@ public class DIFFTest {
 
         DIFFTest g = new DIFFTest();
 
-        ThingDescriptions config = g.init(300);
-        DIFFExpectation expectation = g.stub(config, 2, 1, 1);
+        ThingDescriptions config = g.init(30000);
+        DIFFExpectation expectation = g.stub(config, 10000, 10000, 10000);
 
 
 //        System.out.println("CONFIG: \n"+config.toFullString(0));
