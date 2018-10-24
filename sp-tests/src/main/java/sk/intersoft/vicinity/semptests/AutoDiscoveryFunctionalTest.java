@@ -13,7 +13,9 @@ import java.io.File;
 import java.io.OutputStreamWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import static java.nio.file.StandardOpenOption.*;
 
@@ -21,8 +23,8 @@ public class AutoDiscoveryFunctionalTest {
     private static final Logger LOG = Logger.getLogger(AutoDiscoveryFunctionalTest.class);
 
     private static String[] agentIDs = new String[]{
-            "25d95474-7ddf-40f8-8f52-f4ecd3751aa0",
             "07e75fa3-1063-4933-b5fc-83b1a6c98e9e",
+            "31c3243a-a9df-4ce3-b286-cbb0e75e6421",
             "c1aa668e-38ff-405d-a1dd-fbc09168ec74",
             "1d2b9e77-ff16-445e-a317-96fb20557d1f"
     };
@@ -61,7 +63,7 @@ public class AutoDiscoveryFunctionalTest {
             t1.start();
             //just wait for adapter to start
             try {
-                Thread.sleep(6000);
+                Thread.sleep(8000);
             } catch (Exception ex) {
             }
             LOG.info(String.format("Adapter with config from %s started!", agentConfigs[i]));
@@ -109,7 +111,7 @@ public class AutoDiscoveryFunctionalTest {
         LOG.info("Agent with all adapters started!");
         //just wait a little bit for agent to start
         try {
-            Thread.sleep(24000 * agentConfigs.length);
+            Thread.sleep(50000 * agentConfigs.length);
         } catch (Exception ex) {
         }
 
@@ -186,7 +188,7 @@ public class AutoDiscoveryFunctionalTest {
             LOG.info("Agent with empty adapter started!");
             //just wait a little bit for agent to run
             try {
-                Thread.sleep(8000 * agentConfigs.length);
+                Thread.sleep(17000 * agentConfigs.length);
             } catch (Exception ex) {
             }
 

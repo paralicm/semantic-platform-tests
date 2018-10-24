@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dee5f4f-f3ec-4a9c-919b-92939aa5806c" name="Default Changelist" comment="json -&gt; ThingDesription --&gt; Dump">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp-tests/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sp-tests/sp-tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/sp-tests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/semantiplatformtests/target/" />
@@ -17,6 +22,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-137231647">
@@ -118,29 +126,30 @@
     <session id="1982357878">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7354" />
+          <entry key="java" value="7508" />
           <entry key="json" value="987" />
           <entry key="properties" value="12" />
           <entry key="xml" value="1" />
@@ -148,7 +157,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7354" />
+          <entry key="JAVA" value="7508" />
           <entry key="JSON" value="987" />
           <entry key="Properties" value="12" />
           <entry key="XML" value="1" />
@@ -156,20 +165,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
+          <entry key="class" value="11" />
           <entry key="iml" value="6" />
-          <entry key="java" value="40" />
-          <entry key="json" value="189" />
+          <entry key="java" value="46" />
+          <entry key="json" value="194" />
           <entry key="properties" value="4" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
+          <entry key="CLASS" value="11" />
           <entry key="IDEA_MODULE" value="6" />
-          <entry key="JAVA" value="40" />
-          <entry key="JSON" value="189" />
+          <entry key="JAVA" value="46" />
+          <entry key="JSON" value="194" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="5" />
         </counts>
@@ -179,40 +188,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFTest.java">
+        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="220" column="65" selection-start-line="220" selection-start-column="65" selection-end-line="220" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/semantic-platform-tests.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="17" selection-start-line="17" selection-start-column="4" selection-end-line="21" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFExpectation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+            <state relative-caret-position="329">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,11 +202,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="142">
+              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AdapterClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -237,15 +234,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
               <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -358,15 +346,15 @@
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-10.json" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-04.json" />
         <option value="$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-02.json" />
-        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" />
+        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFExpectations.java" />
+        <option value="$PROJECT_DIR$/sp-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/sk/intersoft/vicinity/agentTest/thing/ThingDescription.java" />
+        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFExpectation.java" />
+        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFTest.java" />
         <option value="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config.json" />
         <option value="$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json" />
         <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java" />
-        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFExpectations.java" />
-        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFExpectation.java" />
-        <option value="$PROJECT_DIR$/sp-tests/pom.xml" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/sk/intersoft/vicinity/agentTest/thing/ThingDescription.java" />
-        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFTest.java" />
+        <option value="$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java" />
       </list>
     </option>
   </component>
@@ -399,7 +387,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="263" />
     <option name="y" value="27" />
     <option name="width" value="2098" />
@@ -430,33 +418,66 @@
             <path>
               <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
               <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="sp-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="sp-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="sp-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="sp-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="semptests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="sp-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
               <item name="testing-adapter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
               <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="testing-adapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
               <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="testing-adapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
               <item name="vicinity-semantic-platform-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="testing-adapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vicinity-semantic-platform-tests" type="b2602c69:ProjectViewProjectNode" />
@@ -479,7 +500,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539787886262" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540396281392" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -521,8 +542,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DIFFTest">
-    <configuration name="AutoDiscoveryFunctionalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.AutoDiscoveryFunctionalTest">
+    <configuration name="AutoDiscoveryFunctionalTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="sk.intersoft.vicinity.semptests.AutoDiscoveryFunctionalTest" />
@@ -592,7 +613,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AutoDiscoveryFunctionalTest" />
         <item itemvalue="JUnit.AdapterServiceImplTest" />
         <item itemvalue="JUnit.AdapterServiceImplTest.thingDescriptionSample2a_" />
       </list>
@@ -634,7 +654,10 @@
       <workItem from="1538750462817" duration="1021000" />
       <workItem from="1538810616511" duration="13238000" />
       <workItem from="1539779132599" duration="3643000" />
-      <workItem from="1539849472911" duration="1361000" />
+      <workItem from="1539849472911" duration="1733000" />
+      <workItem from="1540387009671" duration="9151000" />
+      <workItem from="1540405985278" duration="8579000" />
+      <workItem from="1540418348631" duration="1691000" />
     </task>
     <task id="LOCAL-00001" summary="json -&gt; ThingDesription --&gt; Dump">
       <created>1532601340854</created>
@@ -673,7 +696,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180169000" />
+    <option name="totallyTimeSpent" value="199962000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,10 +708,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="263" y="27" width="2098" height="1309" extended-state="0" />
-    <editor active="true" />
+    <frame x="67" y="25" width="2493" height="1281" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2548733" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21986106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -698,7 +720,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32994062" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49756336" visible="true" weight="0.32994062" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49756336" weight="0.26064292" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4967811" weight="0.39915612" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -706,7 +728,7 @@
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946353" weight="0.32911393" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49892703" weight="0.32911393" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50243664" side_tool="true" weight="0.32994062" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49517167" weight="0.32824427" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49517167" weight="0.32754126" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49946353" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.2514768" />
@@ -716,7 +738,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.100877196" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.100531265" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -767,24 +789,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/java/sk/intersoft/vicinity/semptests/pojos/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/java/sk/intersoft/vicinity/semptests/pojos/Requests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/Adapter4SemTests.java" />
-    <entry file="file://$PROJECT_DIR$/../vicinity-agent/vicinity-agent.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/itemsFromNM.json" />
     <entry file="file://$PROJECT_DIR$/testing-adapter/src/test/java/sk/intersoft/vicinity/semptests/AdapterServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -856,24 +860,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/java/sk/intersoft/vicinity/semptests/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/java/sk/intersoft/vicinity/semptests/services/impl/AdapterServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="89" column="53" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AdapterClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -905,13 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="145" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-05.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -950,13 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-04.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="5348" column="27" selection-start-line="5348" selection-start-column="27" selection-end-line="5348" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-08.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -968,23 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="764" column="6" selection-start-line="764" selection-start-column="6" selection-end-line="764" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-01.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar!/sk/intersoft/vicinity/agent/service/config/processor/ThingDescriptions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1002,10 +961,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/sk/intersoft/vicinity/agentTest/thing/ThingDescription.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="453" column="23" selection-start-line="453" selection-start-column="23" selection-end-line="453" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1023,23 +982,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFExpectation.java">
+    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/java/sk/intersoft/vicinity/semptests/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        <state relative-caret-position="616">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar!/sk/intersoft/vicinity/agent/clients/NeighbourhoodManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar!/sk/intersoft/vicinity/agent/service/config/processor/Discovery.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="71" column="63" lean-forward="true" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3798">
+          <caret line="228" column="39" selection-start-line="228" selection-start-column="39" selection-end-line="228" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/sk/intersoft/vicinity/agentTest/thing/ThingDescription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="3366">
+          <caret line="198" column="25" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar!/sk/intersoft/vicinity/agent/service/config/processor/ThingsDiff.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar!/sk/intersoft/vicinity/agent/service/config/processor/ThingDescriptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-01.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-05.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-adapter/src/main/resources/td-sample-04.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96264">
+          <caret line="5348" column="27" selection-start-line="5348" selection-start-column="27" selection-end-line="5348" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFExpectation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar!/sk/intersoft/vicinity/agent/thing/ThingDescription.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="171" column="42" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AdapterClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1050,24 +1086,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/resources/agent-config-empty.json">
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        <state relative-caret-position="142">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar!/sk/intersoft/vicinity/agent/thing/ThingDescription.class">
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/DIFFTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="220" column="65" selection-start-line="220" selection-start-column="65" selection-end-line="220" selection-end-column="65" />
+        <state relative-caret-position="329">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
