@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/diff-test/diff-test.iml" filepath="$PROJECT_DIR$/diff-test/diff-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/semantic-platform-tests.iml" filepath="$PROJECT_DIR$/semantic-platform-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp-tests/sp-tests.iml" filepath="$PROJECT_DIR$/sp-tests/sp-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/testing-adapter/testing-adapter.iml" filepath="$PROJECT_DIR$/testing-adapter/testing-adapter.iml" />

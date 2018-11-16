@@ -76,7 +76,6 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="module" module-name="utils" scope="TEST" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.json:json:20140107" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.1.11" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.1.11" level="project" />
   </component>

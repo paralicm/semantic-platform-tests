@@ -23,14 +23,12 @@ public class AutoDiscoveryFunctionalTest {
     private static final Logger LOG = Logger.getLogger(AutoDiscoveryFunctionalTest.class);
 
     private static String[] agentIDs = new String[]{
-            "07e75fa3-1063-4933-b5fc-83b1a6c98e9e",
-            "31c3243a-a9df-4ce3-b286-cbb0e75e6421",
             "c1aa668e-38ff-405d-a1dd-fbc09168ec74",
             "1d2b9e77-ff16-445e-a317-96fb20557d1f"
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
-            "td-sample-01.json",
+            "td-sample-01.json" /*,
             "td-sample-02.json",
             "td-sample-03.json",
             "td-sample-04.json",
@@ -39,7 +37,7 @@ public class AutoDiscoveryFunctionalTest {
             "td-sample-07.json",
             "td-sample-08.json",
             "td-sample-09.json",
-            "td-sample-10.json"
+            "td-sample-10.json" */
     };
     private static int adapterPort = 8040;
     private static boolean updateTypeTest = false; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists

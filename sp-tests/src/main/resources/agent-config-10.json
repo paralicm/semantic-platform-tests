@@ -1,11 +1,11 @@
 {
   "credentials": {
-    "agent-id": "526a6e8f-2dfc-4e18-a7d8-7914f3da2a66",
+    "agent-id": "0da34dab-1fe9-471b-9212-e842635a3c54",
     "password": "test01"
   },
   "adapters": [
     {
-      "adapter-id": "is-wp6-test01.7-adapter001",
+      "adapter-id": "is-wp6.3-test01-adapter-gorenje",
       "active-discovery": false,
       "endpoint": "http://localhost:8040",
       "events": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter002",
+      "adapter-id": "is-wp6.3-test01-adapter-aau",
       "active-discovery": false,
       "endpoint": "http://localhost:8041",
       "events": {
@@ -33,7 +33,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter003",
+      "adapter-id": "is-wp6.3-test01-adapter-tiny-mesh",
       "active-discovery": false,
       "endpoint": "http://localhost:8042",
       "events": {
@@ -47,7 +47,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter004",
+      "adapter-id": "is-wp6.3-test01-adapter-certh",
       "active-discovery": false,
       "endpoint": "http://localhost:8043",
       "events": {
@@ -61,7 +61,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter005",
+      "adapter-id": "is-wp6.3-test01-adapter005",
       "active-discovery": false,
       "endpoint": "http://localhost:8044",
       "events": {
@@ -75,7 +75,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter006",
+      "adapter-id": "is-wp6.3-test01-adapter006",
       "active-discovery": false,
       "endpoint": "http://localhost:8045",
       "events": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter007",
+      "adapter-id": "is-wp6.3-test01-adapter007",
       "active-discovery": false,
       "endpoint": "http://localhost:8046",
       "events": {
@@ -103,7 +103,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter008",
+      "adapter-id": "is-wp6.3-test01-adapter008",
       "active-discovery": false,
       "endpoint": "http://localhost:8047",
       "events": {
@@ -117,7 +117,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter009",
+      "adapter-id": "is-wp6.3-test01-adapter009",
       "active-discovery": false,
       "endpoint": "http://localhost:8048",
       "events": {
@@ -131,7 +131,7 @@
       }
     },
     {
-      "adapter-id": "is-wp6-test01.7-adapter010",
+      "adapter-id": "is-wp6.3-test01-adapter010",
       "active-discovery": false,
       "endpoint": "http://localhost:8049",
       "events": {
