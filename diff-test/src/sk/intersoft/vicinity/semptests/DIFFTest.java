@@ -265,18 +265,24 @@ public class DIFFTest {
 
     public static void main(String[] args) throws Exception {
 
-        int all = 10000;
+        int all = 100;
         int noCreate = all/3;
         int noUpdate = all/3;
         int noDelete = all/3;
 
-        if (args.length > 1) {
-            all = Integer.parseInt(args[0]);
-            noCreate = Integer.parseInt(args[1]);
-            noUpdate = Integer.parseInt(args[2]);
-            noDelete = Integer.parseInt(args[3]);
+        try {
+            if (args.length > 1) {
+                all = Integer.parseInt(args[0]);
+                noCreate = Integer.parseInt(args[1]);
+                noUpdate = Integer.parseInt(args[2]);
+                noDelete = Integer.parseInt(args[3]);
+            }
+            System.out.println("all/create/update/delete = " + all + "/" + noCreate + "/" + noUpdate + "/" + noDelete );
+        } catch (Exception e) {
+            System.out.println("usage: java -Xmx6000m -jar diff-test.jar numberOfAllThings numberOfCreated numberOfUpdated numberOfDeleted");
+            System.exit(1);
         }
-        System.out.println("all/create/update/delete = " + all + "/" + noCreate + "/" + noUpdate + "/" + noDelete );
+
         DIFFTest g = new DIFFTest();
 
         ThingDescriptions config = g.init(all);
