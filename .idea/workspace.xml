@@ -7,10 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2dee5f4f-f3ec-4a9c-919b-92939aa5806c" name="Default Changelist" comment="json -&gt; ThingDesription --&gt; Dump">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/diff_test_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diff-test/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diff-test/src/sk/intersoft/vicinity/semptests/DIFFTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/diff-test/src/sk/intersoft/vicinity/semptests/DIFFTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itemsFromNM.json" beforeDir="false" afterPath="$PROJECT_DIR$/itemsFromNM.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/semantiplatformtests/target/" />
     <ignored path="$PROJECT_DIR$/semantiplatformtests/testing-adapter/target/" />
@@ -127,14 +126,14 @@
     <session id="1982357878">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="31" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="3" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="4" />
-          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="4" />
           <entry key="project.open.time.28" value="1" />
@@ -147,13 +146,13 @@
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="56" />
-          <entry key="java" value="9578" />
+          <entry key="java" value="9852" />
           <entry key="json" value="1007" />
           <entry key="properties" value="12" />
           <entry key="xml" value="11" />
@@ -162,7 +161,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="56" />
-          <entry key="JAVA" value="9578" />
+          <entry key="JAVA" value="9852" />
           <entry key="JSON" value="1007" />
           <entry key="Properties" value="12" />
           <entry key="XML" value="11" />
@@ -172,7 +171,7 @@
         <counts>
           <entry key="class" value="28" />
           <entry key="iml" value="8" />
-          <entry key="java" value="52" />
+          <entry key="java" value="54" />
           <entry key="json" value="197" />
           <entry key="properties" value="4" />
           <entry key="xml" value="11" />
@@ -182,7 +181,7 @@
         <counts>
           <entry key="CLASS" value="28" />
           <entry key="IDEA_MODULE" value="8" />
-          <entry key="JAVA" value="52" />
+          <entry key="JAVA" value="54" />
           <entry key="JSON" value="197" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="11" />
@@ -195,8 +194,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/diff-test/src/sk/intersoft/vicinity/semptests/DIFFTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="281" column="43" lean-forward="true" selection-start-line="281" selection-start-column="43" selection-end-line="281" selection-end-column="43" />
+            <state relative-caret-position="226">
+              <caret line="287" column="19" selection-start-line="287" selection-start-column="19" selection-end-line="287" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,8 +218,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+            <state relative-caret-position="667">
+              <caret line="34" column="87" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,10 +228,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AdapterClient.java">
+        <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="460">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -418,6 +417,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -564,7 +564,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -580,7 +579,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542477355532" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542635156057" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -749,7 +748,8 @@
       <workItem from="1542388989990" duration="7117000" />
       <workItem from="1542443623027" duration="40000" />
       <workItem from="1542443701906" duration="25815000" />
-      <workItem from="1542475993180" duration="1350000" />
+      <workItem from="1542475993180" duration="2088000" />
+      <workItem from="1542631598284" duration="3912000" />
     </task>
     <task id="LOCAL-00001" summary="json -&gt; ThingDesription --&gt; Dump">
       <created>1532601340854</created>
@@ -788,7 +788,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246030000" />
+    <option name="totallyTimeSpent" value="250680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -800,10 +800,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="35" width="2483" height="1405" extended-state="6" />
-    <editor active="true" />
+    <frame x="77" y="39" width="2483" height="1401" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24432522" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2472142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -813,7 +812,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.362249" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49756336" visible="true" weight="0.30200803" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49756336" weight="0.30200803" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4967811" weight="0.39839357" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -871,19 +870,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/diff-test/src/sk/intersoft/vicinity/semptests/DIFFTest.java</url>
-          <line>303</line>
+          <line>322</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/diff-test/src/sk/intersoft/vicinity/semptests/DIFFTest.java</url>
-          <line>288</line>
+          <line>307</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/diff-test/src/sk/intersoft/vicinity/semptests/DIFFTest.java</url>
-          <line>248</line>
+          <line>252</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -1099,13 +1098,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diff-test/src/DIFFExpectation.java" />
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sp-tests/src/main/resources/agent-config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -1161,16 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diff-test/src/sk/intersoft/vicinity/semptests/DIFFTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="281" column="43" lean-forward="true" selection-start-line="281" selection-start-column="43" selection-end-line="281" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/vicinity-agent/agent-service-full-0.6.3.jar!/org/json/JSONArray.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7659">
@@ -1209,20 +1191,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AdapterClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AutoDiscoveryFunctionalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/RunAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        <state relative-caret-position="667">
+          <caret line="34" column="87" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sp-tests/src/main/java/sk/intersoft/vicinity/semptests/AdapterClient.java">
+    <entry file="file://$PROJECT_DIR$/diff-test/src/sk/intersoft/vicinity/semptests/DIFFTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="226">
+          <caret line="287" column="19" selection-start-line="287" selection-start-column="19" selection-end-line="287" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -10,6 +10,10 @@ import sk.intersoft.vicinity.agent.thing.InteractionPatternEndpoint;
 import sk.intersoft.vicinity.agent.thing.ThingDescription;
 import sk.intersoft.vicinity.agent.thing.ThingValidator;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.*;
 
 public class DIFFTest {
@@ -262,6 +266,17 @@ public class DIFFTest {
         return x.toString(2);
     }
 
+    private static boolean saveLog(String msg) {
+        try {
+            Files.write(Paths.get(System.getProperty("user.home") + "/vicinity/vicinity-semantic-platform-tests/results/diff/DiffTestsLogs.txt"),
+                    msg.getBytes(),
+                    StandardOpenOption.APPEND);
+        } catch (IOException e) {
+            //e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
 
     public static void main(String[] args) throws Exception {
 
@@ -270,6 +285,8 @@ public class DIFFTest {
         int noUpdate = all/3;
         int noDelete = all/3;
 
+        String msg;
+
         try {
             if (args.length > 1) {
                 all = Integer.parseInt(args[0]);
@@ -277,7 +294,9 @@ public class DIFFTest {
                 noUpdate = Integer.parseInt(args[2]);
                 noDelete = Integer.parseInt(args[3]);
             }
-            System.out.println("all/create/update/delete = " + all + "/" + noCreate + "/" + noUpdate + "/" + noDelete );
+            msg = "all/create/update/delete = " + all + "/" + noCreate + "/" + noUpdate + "/" + noDelete;
+            System.out.println(msg);
+            saveLog("\n************************************\n" + msg);
         } catch (Exception e) {
             System.out.println("usage: java -Xmx6000m -jar diff-test.jar numberOfAllThings numberOfCreated numberOfUpdated numberOfDeleted");
             System.exit(1);
@@ -330,38 +349,51 @@ public class DIFFTest {
 
         long end = duration(start);
 
-
+        msg = "\nDIFF TOOK: "+format(end);
         System.out.println("DIFF TOOK: "+format(end));
 
         System.out.println("DIFF: ");
+        msg += "\n" + "DIFF: ";
         System.out.println(diff.toString(0));
+        //msg += "\n" + diff.toString(0);
 
         System.out.println("COMPARING EXPECTATIONS: ");
+        msg += "\n" + "COMPARING EXPECTATIONS: ";
         System.out.println("DELETE: ");
+        msg += "\n" + "DELETE: ";
         Set<String> delete = g.oids(diff.delete);
         //System.out.println("  expected: "+expectation.delete);
         //System.out.println("  real: "+delete);
         System.out.println("  match: "+delete.equals(expectation.delete));
+        msg += "\n" + "  match: " + delete.equals(expectation.delete);
 
         System.out.println("CREATE: ");
+        msg += "\n" + "CREATE: ";
         Set<String> create = g.iids(diff.create);
         //System.out.println("  expected: "+expectation.create);
         //System.out.println("  real: "+create);
         System.out.println("  match: "+create.equals(expectation.create));
+        msg += "\n" + "  match: "+create.equals(expectation.create);
 
         System.out.println("UPDATE: ");
+        msg += "\n" + "UPDATE: ";
         Set<String> update = g.oids(diff.update);
         //System.out.println("  expected: "+expectation.update);
         //System.out.println("  real: "+update);
         System.out.println("  match: "+update.equals(expectation.update));
+        msg += "\n" + "  match: "+update.equals(expectation.update);
 
         System.out.println("UNCHANGE: ");
+        msg += "\n" + "UNCHANGE: ";
         Set<String> unchange = g.oids(diff.unchanged);
         //System.out.println("  expected: "+expectation.unchange);
         //System.out.println("  real: "+unchange);
         System.out.println("  match: "+unchange.equals(expectation.unchange));
+        msg += "\n" + "  match: "+unchange.equals(expectation.unchange);
 
         System.out.println("DIFF TOOK: "+format(end));
+        msg += "\n" + "DIFF TOOK: "+format(end) + "/n" ;
 
+        saveLog(msg);
     }
 }
