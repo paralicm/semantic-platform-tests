@@ -917,3 +917,1314 @@ UPDATE:
 UNCHANGE: 
   match: true
 DIFF TOOK: 56106ms :: 0:0:56/n
+
+************************************
+-Xmx4500m
+all/create/update/delete = 500000/250000/250000/250000
+************************************
+-Xmx6500m
+all/create/update/delete = 500000/250000/250000/250000
+************************************
+-Xmx8000m
+all/create/update/delete = 500000/250000/250000/250000
+************************************
+java -Xmx12000m -jar ./target/artifacts/diff-test.jar 500000 250000 250000 250000 > /dev/null
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 61758ms :: 0:1:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 61758ms :: 0:1:1/n
+
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 54151ms :: 0:0:54
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 54151ms :: 0:0:54/n
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 61175ms :: 0:1:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 61175ms :: 0:1:1/n
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 53806ms :: 0:0:53
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 53806ms :: 0:0:53/n
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 62058ms :: 0:1:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 62058ms :: 0:1:2/n
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 57930ms :: 0:0:57
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 57930ms :: 0:0:57/n
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 58417ms :: 0:0:58
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 58417ms :: 0:0:58/n
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 69178ms :: 0:1:9
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 69178ms :: 0:1:9/n
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 56690ms :: 0:0:56
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 56690ms :: 0:0:56/n
+************************************
+all/create/update/delete = 500000/250000/250000/250000
+DIFF TOOK: 52200ms :: 0:0:52
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 52200ms :: 0:0:52/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 88669ms :: 0:1:28
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 88669ms :: 0:1:28/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 75896ms :: 0:1:15
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 75896ms :: 0:1:15/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 74882ms :: 0:1:14
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 74882ms :: 0:1:14/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 82322ms :: 0:1:22
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 82322ms :: 0:1:22/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 78804ms :: 0:1:18
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 78804ms :: 0:1:18/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 80119ms :: 0:1:20
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 80119ms :: 0:1:20/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 77943ms :: 0:1:17
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 77943ms :: 0:1:17/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 81266ms :: 0:1:21
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 81266ms :: 0:1:21/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 72514ms :: 0:1:12
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 72514ms :: 0:1:12/n
+************************************
+all/create/update/delete = 700000/350000/350000/350000
+DIFF TOOK: 84714ms :: 0:1:24
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 84714ms :: 0:1:24/n
+************************************
+all/create/update/delete = 1000000/500000/500000/500000
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3332)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:124)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:649)
+	at java.lang.StringBuffer.append(StringBuffer.java:381)
+	at java.io.StringWriter.write(StringWriter.java:77)
+	at org.json.JSONObject.quote(JSONObject.java:1375)
+	at org.json.JSONObject.writeValue(JSONObject.java:1769)
+	at org.json.JSONObject.write(JSONObject.java:1827)
+	at org.json.JSONObject.writeValue(JSONObject.java:1745)
+	at org.json.JSONArray.write(JSONArray.java:1118)
+	at org.json.JSONObject.writeValue(JSONObject.java:1747)
+	at org.json.JSONObject.write(JSONObject.java:1827)
+	at org.json.JSONObject.writeValue(JSONObject.java:1745)
+	at org.json.JSONObject.write(JSONObject.java:1827)
+	at org.json.JSONObject.writeValue(JSONObject.java:1745)
+	at org.json.JSONObject.write(JSONObject.java:1827)
+	at org.json.JSONObject.writeValue(JSONObject.java:1745)
+	at org.json.JSONArray.write(JSONArray.java:1105)
+	at org.json.JSONObject.writeValue(JSONObject.java:1747)
+	at org.json.JSONObject.write(JSONObject.java:1827)
+	at org.json.JSONObject.writeValue(JSONObject.java:1745)
+	at org.json.JSONObject.write(JSONObject.java:1810)
+	at org.json.JSONObject.writeValue(JSONObject.java:1745)
+	at org.json.JSONObject.write(JSONObject.java:1810)
+	at org.json.JSONObject.writeValue(JSONObject.java:1745)
+	at org.json.JSONArray.write(JSONArray.java:1118)
+	at org.json.JSONObject.writeValue(JSONObject.java:1747)
+	at org.json.JSONObject.write(JSONObject.java:1810)
+	at org.json.JSONObject.toString(JSONObject.java:1609)
+	at sk.intersoft.vicinity.semptests.DIFFTest.config2json(DIFFTest.java:266)
+	at sk.intersoft.vicinity.semptests.DIFFTest.main(DIFFTest.java:310)
+
+************************************
+all/create/update/delete = 1000000/500000/500000/500000
+************************************
+java -Xmx15000m -jar ./target/artifacts/diff-test.jar 900000 450000 450000 450000 > /dev/null 
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 99413ms :: 0:1:39
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 99413ms :: 0:1:39/n
+
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 103083ms :: 0:1:43
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 103083ms :: 0:1:43/n
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 103298ms :: 0:1:43
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 103298ms :: 0:1:43/n
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 91605ms :: 0:1:31
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 91605ms :: 0:1:31/n
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 91882ms :: 0:1:31
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 91882ms :: 0:1:31/n
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 100776ms :: 0:1:40
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 100776ms :: 0:1:40/n
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 103042ms :: 0:1:43
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 103042ms :: 0:1:43/n
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 93816ms :: 0:1:33
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 93816ms :: 0:1:33/n
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 104248ms :: 0:1:44
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 104248ms :: 0:1:44/n
+************************************
+all/create/update/delete = 900000/450000/450000/450000
+DIFF TOOK: 109683ms :: 0:1:49
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 109683ms :: 0:1:49/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 5138ms :: 0:0:5
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 5138ms :: 0:0:5/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 5069ms :: 0:0:5
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 5069ms :: 0:0:5/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 4400ms :: 0:0:4
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 4400ms :: 0:0:4/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 6309ms :: 0:0:6
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 6309ms :: 0:0:6/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 6015ms :: 0:0:6
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 6015ms :: 0:0:6/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 4928ms :: 0:0:4
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 4928ms :: 0:0:4/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 3402ms :: 0:0:3
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 3402ms :: 0:0:3/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 5146ms :: 0:0:5
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 5146ms :: 0:0:5/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 4317ms :: 0:0:4
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 4317ms :: 0:0:4/n
+************************************
+all/create/update/delete = 50000/25000/25000/25000
+DIFF TOOK: 5004ms :: 0:0:5
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 5004ms :: 0:0:5/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 2210ms :: 0:0:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 2210ms :: 0:0:2/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 2300ms :: 0:0:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 2300ms :: 0:0:2/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 2829ms :: 0:0:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 2829ms :: 0:0:2/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 2859ms :: 0:0:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 2859ms :: 0:0:2/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 2772ms :: 0:0:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 2772ms :: 0:0:2/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 2989ms :: 0:0:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 2989ms :: 0:0:2/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 2045ms :: 0:0:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 2045ms :: 0:0:2/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 3323ms :: 0:0:3
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 3323ms :: 0:0:3/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 2112ms :: 0:0:2
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 2112ms :: 0:0:2/n
+************************************
+all/create/update/delete = 20000/10000/10000/10000
+DIFF TOOK: 3042ms :: 0:0:3
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 3042ms :: 0:0:3/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1190ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1190ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1127ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1127ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1254ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1254ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1303ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1303ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1247ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1247ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1375ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1375ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1185ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1185ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1228ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1228ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1162ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1162ms :: 0:0:1/n
+************************************
+all/create/update/delete = 10000/5000/5000/5000
+DIFF TOOK: 1250ms :: 0:0:1
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 1250ms :: 0:0:1/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 705ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 705ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 703ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 703ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 631ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 631ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 669ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 669ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 707ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 707ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 603ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 603ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 691ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 691ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 660ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 660ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 683ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 683ms :: 0:0:0/n
+************************************
+all/create/update/delete = 5000/2500/2500/2500
+DIFF TOOK: 631ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 631ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 199ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 199ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 192ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 192ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 193ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 193ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 202ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 202ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 206ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 206ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 182ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 182ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 185ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 185ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 177ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 177ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 196ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 196ms :: 0:0:0/n
+************************************
+all/create/update/delete = 1000/500/500/500
+DIFF TOOK: 201ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 201ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 42ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 42ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 55ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 55ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 41ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 41ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 42ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 42ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 39ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 39ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 37ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 37ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 43ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 43ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 43ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 43ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 42ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 42ms :: 0:0:0/n
+************************************
+all/create/update/delete = 100/50/50/50
+DIFF TOOK: 42ms :: 0:0:0
+DIFF: 
+COMPARING EXPECTATIONS: 
+DELETE: 
+  match: true
+CREATE: 
+  match: true
+UPDATE: 
+  match: true
+UNCHANGE: 
+  match: true
+DIFF TOOK: 42ms :: 0:0:0/n
