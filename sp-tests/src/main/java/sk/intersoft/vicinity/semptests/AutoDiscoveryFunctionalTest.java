@@ -3,6 +3,7 @@ package sk.intersoft.vicinity.semptests;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import sk.intersoft.vicinity.agentTest.JsonCompare;
 import sk.intersoft.vicinity.agentTest.thing.ThingDescription;
@@ -47,6 +48,10 @@ public class AutoDiscoveryFunctionalTest {
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
+
+        testLimitOfTDsInAdapter();
+
+        System.exit(0);
 
         ArrayList<Thread> adapters = new ArrayList<Thread>();
 
@@ -257,5 +262,65 @@ public class AutoDiscoveryFunctionalTest {
         }
     }
 
+    private static void testLimitOfTDsInAdapter() {
+
+        //start the agent with active adapter
+        RunAgent agentActiveAdapter = new RunAgent("agent-config-active.json");
+        agentActiveAdapter.start();
+        LOG.info("Agent with active adapter started!");
+        //just wait a little bit for agent to start
+        try {
+            Thread.sleep(10000);
+        } catch (Exception ex) {
+        }
+
+        long start = System.currentTimeMillis();
+
+        try {
+            AgentClient agentClient = new AgentClient();
+            JSONObject response = agentClient.postObjects(45, "adapter-objects.json");
+
+            String statusCodeReason = response.getString("statusCodeReason");
+            LOG.info(statusCodeReason);
+            LOG.info(response.getInt("statusCode"));
+            if (statusCodeReason == "OK") {
+                JSONObject msg = response.getJSONArray("message").getJSONObject(0);
+                LOG.info(msg.getString("response"));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        long finish1 = System.currentTimeMillis();
+        long timeElapsed1 = finish1 - start;
+
+        LOG.info(String.format("Test duration: %s", String.format("%02d:%02d:%02d.%d\n\n", timeElapsed1 / (3600 * 1000),
+                timeElapsed1 / (60 * 1000) % 60, timeElapsed1 / 1000 % 60, timeElapsed1 % 1000)));
+
+        //stop agent with active adapter
+        agentActiveAdapter.stop();
+        LOG.info("Agent with active adapter stopped!");
+
+        //just wait a little bit for agent to stop
+        try {
+            Thread.sleep(10000);
+        } catch (Exception ex) {
+        }
+
+        //start the empty agent
+        RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json");
+        agentEmptyAdapter.start();
+        LOG.info("Agent with empty adapter started!");
+        //just wait a little bit for agent to run
+        try {
+            Thread.sleep(10000);
+        } catch (Exception ex) {
+        }
+
+        //stop agent with empty adapter
+        agentEmptyAdapter.stop();
+        LOG.info("Agent with empty adapter stopped!");
+
+    }
 
 }

@@ -76,7 +76,7 @@ public class RunAgent implements Runnable {
         }
         //just wait a little bit for agent to run
         try {
-            Thread.sleep(5000);
+            Thread.sleep(10000);
         } catch (Exception ex) {
         }
         agentProcess.destroy();

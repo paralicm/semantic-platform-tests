@@ -5,7 +5,7 @@
   },
   "adapters": [
     {
-      "adapter-id": "is-wp6.3-test01-adapter-empty",
+      "adapter-id": "is-wp6.3-test01m-adapter-active",
       "active-discovery": true,
       "events": {}
     }
