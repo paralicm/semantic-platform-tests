@@ -25,11 +25,12 @@ public class AutoDiscoveryFunctionalTest {
 
     private static String[] agentIDs = new String[]{
             "c1aa668e-38ff-405d-a1dd-fbc09168ec74",
-            "1d2b9e77-ff16-445e-a317-96fb20557d1f"
+            "1d2b9e77-ff16-445e-a317-96fb20557d1f",
+            "d50e838a-0619-4338-b185-1ba58dee17c9"
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
-            "td-sample-01.json" /*,
+            "td-sample-01.json",
             "td-sample-02.json",
             "td-sample-03.json",
             "td-sample-04.json",
@@ -38,21 +39,21 @@ public class AutoDiscoveryFunctionalTest {
             "td-sample-07.json",
             "td-sample-08.json",
             "td-sample-09.json",
-            "td-sample-10.json" */
+            "td-sample-10.json"
     };
     private static int adapterPort = 8040;
-    private static boolean updateTypeTest = false; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
+    private static boolean updateTypeTest = true; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
     private static boolean cleanAgentAfterTest = true; //if true, delete all items from agent
     public static boolean WINDOWS = false;
 
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
-
+/*
         testLimitOfTDsInAdapter();
 
         System.exit(0);
-
+*/
         ArrayList<Thread> adapters = new ArrayList<Thread>();
 
         //TODO: generovat objects_TD podla slovnikov pre property a actions & events
@@ -123,7 +124,7 @@ public class AutoDiscoveryFunctionalTest {
         int numberOfTDs;
         if (!updateTypeTest)
         {
-            numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM.json", false);
+            numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM.json", true);
         } else {
             numberOfTDs = getAgentItemsFromNM(agentIDs[0], "itemsFromNM2.json", true);
         }
