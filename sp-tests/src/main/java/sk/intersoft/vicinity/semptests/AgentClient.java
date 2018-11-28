@@ -25,13 +25,14 @@ public class AgentClient {
         }
     }
 
-    public JSONObject postObjects(int numberOfTDs, String filename) {
+    public JSONObject postObjects(int numberOfTDs, String filename, int id) {
         try {
             HttpPost request = new HttpPost(uri+"/objects");
             ClassLoader cl = getClass().getClassLoader();
             String payload = IOUtils
                         .toString(cl.getResourceAsStream(filename));
             JSONObject newPayload = new JSONObject(payload);
+            String adapterId = newPayload.getString("adapter-id");
             JSONArray jarr = newPayload.getJSONArray("thing-descriptions");
             JSONObject oven = jarr.getJSONObject(0);
             JSONObject refrigerator = jarr.getJSONObject(1);
@@ -50,6 +51,7 @@ public class AgentClient {
                 newjarr.put(index++, newFridge);
                 i++;
             }
+            newPayload.put("adapter-id", adapterId+id);
             newPayload.put("thing-descriptions", newjarr);
 
             LOG.info("NEWPAYLOAD --> " + newPayload.toString().substring(0,1000) + "...");

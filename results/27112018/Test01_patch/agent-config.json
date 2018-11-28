@@ -1,0 +1,148 @@
+{
+  "credentials": {
+    "agent-id": "c1aa668e-38ff-405d-a1dd-fbc09168ec74",
+    "password": "test01"
+  },
+  "adapters": [
+    {
+      "adapter-id": "is-wp6.3-test01-adapter-gorenje",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8040",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter-aau",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8041",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter-tiny-mesh",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8042",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter-certh",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8043",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter005",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8044",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter006",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8045",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter007",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8046",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter008",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8047",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter009",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8048",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    },
+    {
+      "adapter-id": "is-wp6.3-test01-adapter010",
+      "active-discovery": false,
+      "endpoint": "http://localhost:8049",
+      "events": {
+        "channels": [
+          {
+            "infrastructure-id": "cb44b166-0d3a-49cc-bcec-d88e354640be",
+            "eid": "door_activity"
+          }
+        ],
+        "subscriptions": []
+      }
+    }
+  ]
+}

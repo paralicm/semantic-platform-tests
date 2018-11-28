@@ -3,7 +3,6 @@ package sk.intersoft.vicinity.semptests;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 import sk.intersoft.vicinity.agentTest.JsonCompare;
 import sk.intersoft.vicinity.agentTest.thing.ThingDescription;
@@ -42,18 +41,18 @@ public class AutoDiscoveryFunctionalTest {
             "td-sample-10.json"
     };
     private static int adapterPort = 8040;
-    private static boolean updateTypeTest = true; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
+    private static boolean updateTypeTest = false; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
     private static boolean cleanAgentAfterTest = true; //if true, delete all items from agent
     public static boolean WINDOWS = false;
 
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
-/*
+
         testLimitOfTDsInAdapter();
 
         System.exit(0);
-*/
+
         ArrayList<Thread> adapters = new ArrayList<Thread>();
 
         //TODO: generovat objects_TD podla slovnikov pre property a actions & events
@@ -271,32 +270,22 @@ public class AutoDiscoveryFunctionalTest {
         LOG.info("Agent with active adapter started!");
         //just wait a little bit for agent to start
         try {
-            Thread.sleep(10000);
+            Thread.sleep(20000);
         } catch (Exception ex) {
         }
 
-        long start = System.currentTimeMillis();
 
+        ActiveAdapter[] activeAdapters = new ActiveAdapter[100];
+        for (int i = 1; i < 6; i++) {
+            activeAdapters[i] = new ActiveAdapter("adapter-objects.json", i, 10);
+            activeAdapters[i].start();
+        }
         try {
-            AgentClient agentClient = new AgentClient();
-            JSONObject response = agentClient.postObjects(45, "adapter-objects.json");
-
-            String statusCodeReason = response.getString("statusCodeReason");
-            LOG.info(statusCodeReason);
-            LOG.info(response.getInt("statusCode"));
-            if (statusCodeReason == "OK") {
-                JSONObject msg = response.getJSONArray("message").getJSONObject(0);
-                LOG.info(msg.getString("response"));
-            }
-        } catch (JSONException e) {
+            for (int i = 1; i < 6; i++)
+                activeAdapters[i].threadForAdapter.join();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        long finish1 = System.currentTimeMillis();
-        long timeElapsed1 = finish1 - start;
-
-        LOG.info(String.format("Test duration: %s", String.format("%02d:%02d:%02d.%d\n\n", timeElapsed1 / (3600 * 1000),
-                timeElapsed1 / (60 * 1000) % 60, timeElapsed1 / 1000 % 60, timeElapsed1 % 1000)));
 
         //stop agent with active adapter
         agentActiveAdapter.stop();
