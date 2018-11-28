@@ -54,13 +54,13 @@ public class AgentClient {
             newPayload.put("adapter-id", adapterId+id);
             newPayload.put("thing-descriptions", newjarr);
 
-            LOG.info("NEWPAYLOAD --> " + newPayload.toString().substring(0,1000) + "...");
+            //LOG.info("NEWPAYLOAD --> " + newPayload.toString().substring(0,1000) + "...");
             StringEntity entity = new StringEntity(newPayload.toString(),
                     ContentType.APPLICATION_FORM_URLENCODED);
             request.setEntity(entity);
 
             HttpResponse response = client.execute(request);
-            LOG.info(response.getStatusLine().getStatusCode());
+            //LOG.info(response.getStatusLine().getStatusCode());
             JSONObject rjobj = new JSONObject(EntityUtils.toString(response.getEntity()));
             return rjobj;
         } catch (Exception e) {

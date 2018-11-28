@@ -1,5 +1,5 @@
 {
-  "adapter-id": "is-wp6.3-test01p-adapter-active",
+  "adapter-id": "is-wp6.3-test01s-adapter-active",
   "thing-descriptions": [
     {
       "type": "core:Device",

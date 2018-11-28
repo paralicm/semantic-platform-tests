@@ -1,31 +1,11 @@
 {
   "credentials": {
-    "agent-id": "d50e838a-0619-4338-b185-1ba58dee17c9",
+    "agent-id": "46cbcd7f-d4ad-432f-bbb1-90f95b19b47a",
     "password": "test01"
   },
   "adapters": [
     {
-      "adapter-id": "is-wp6.3-test01p-adapter-active1",
-      "active-discovery": true,
-      "events": {}
-    },
-    {
-      "adapter-id": "is-wp6.3-test01p-adapter-active2",
-      "active-discovery": true,
-      "events": {}
-    },
-    {
-      "adapter-id": "is-wp6.3-test01p-adapter-active3",
-      "active-discovery": true,
-      "events": {}
-    },
-    {
-      "adapter-id": "is-wp6.3-test01p-adapter-active4",
-      "active-discovery": true,
-      "events": {}
-    },
-    {
-      "adapter-id": "is-wp6.3-test01p-adapter-active5",
+      "adapter-id": "is-wp6.3-test01s-adapter-active",
       "active-discovery": true,
       "events": {}
     }

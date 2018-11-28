@@ -33,9 +33,14 @@ public class ActiveAdapter implements Runnable {
             String statusCodeReason = response.getString("statusCodeReason");
             LOG.info(statusCodeReason);
             LOG.info(response.getInt("statusCode"));
-            if (statusCodeReason == "OK") {
+            if (statusCodeReason.equals("OK")) {
                 JSONObject msg = response.getJSONArray("message").getJSONObject(0);
                 LOG.info(msg.getString("response"));
+                LOG.info(String.format("Registration for Adapter %d SUCCESSFUL", adapterId));
+            }
+            else
+            {
+                LOG.info(String.format("Registration for Adapter %d FAILED", adapterId));
             }
         } catch (JSONException e) {
             e.printStackTrace();

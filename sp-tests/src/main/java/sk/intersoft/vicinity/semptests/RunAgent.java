@@ -13,11 +13,13 @@ public class RunAgent implements Runnable {
     private Process agentProcess;
     private String agentConfigFile;
     private ProcessBuilder builder;
+    private boolean resource;
     private static int counter = 1;
 
-    public RunAgent(String agentConfigFile) {
+    public RunAgent(String agentConfigFile, boolean resource) {
         this.builder = new ProcessBuilder();
         this.agentConfigFile = agentConfigFile;
+        this.resource = resource;
     }
 
     public void start() {
@@ -39,8 +41,13 @@ public class RunAgent implements Runnable {
 //                "/vicinity/agent/out" + Thread.currentThread().getId()+".txt"));
         ClassLoader classLoader = AutoDiscoveryFunctionalTest.class.getClassLoader();
         try {
+            File file1;
+            if (resource)
+                file1 = new File(classLoader.getResource(agentConfigFile).getFile());
+            else
+                file1 = new File(agentConfigFile);
             Files.copy(
-                    new File(classLoader.getResource(agentConfigFile).getFile()).toPath(),
+                    file1.toPath(),
                     new File(System.getProperty("" +
                             "user.home") + "/vicinity/agent/config/agents/agent-01.json").toPath(),
                     REPLACE_EXISTING);

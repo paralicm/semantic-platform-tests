@@ -1,6 +1,7 @@
 package sk.intersoft.vicinity.semptests;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -8,9 +9,7 @@ import sk.intersoft.vicinity.agentTest.JsonCompare;
 import sk.intersoft.vicinity.agentTest.thing.ThingDescription;
 import sk.intersoft.vicinity.agentTest.thing.ThingValidator;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -25,7 +24,8 @@ public class AutoDiscoveryFunctionalTest {
     private static String[] agentIDs = new String[]{
             "c1aa668e-38ff-405d-a1dd-fbc09168ec74",
             "1d2b9e77-ff16-445e-a317-96fb20557d1f",
-            "d50e838a-0619-4338-b185-1ba58dee17c9"
+            "d50e838a-0619-4338-b185-1ba58dee17c9",
+            "46cbcd7f-d4ad-432f-bbb1-90f95b19b47a"
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
@@ -44,14 +44,18 @@ public class AutoDiscoveryFunctionalTest {
     private static boolean updateTypeTest = false; //if true suppose previous run with value false - i.e. itemsFromNMwithOIDs.json exists
     private static boolean cleanAgentAfterTest = true; //if true, delete all items from agent
     public static boolean WINDOWS = false;
+    public static boolean registrationLimitsTest = true;
 
 
     public static void main(String[] args) {
+        AutoDiscoveryFunctionalTest test01 = new AutoDiscoveryFunctionalTest();
         long start = System.currentTimeMillis();
 
-        testLimitOfTDsInAdapter();
-
-        System.exit(0);
+        if (registrationLimitsTest)
+        {
+            test01.testLimitOfTDsInAdapter(10, 5);
+            System.exit(0);
+        }
 
         ArrayList<Thread> adapters = new ArrayList<Thread>();
 
@@ -109,7 +113,7 @@ public class AutoDiscoveryFunctionalTest {
 
 
         //start the agent with all adapters
-        RunAgent agentAllAdapters = new RunAgent("agent-config.json");
+        RunAgent agentAllAdapters = new RunAgent("agent-config.json", true);
         agentAllAdapters.start();
         LOG.info("Agent with all adapters started!");
         //just wait a little bit for agent to start
@@ -186,7 +190,7 @@ public class AutoDiscoveryFunctionalTest {
 
         if (cleanAgentAfterTest && !WINDOWS) {
             //start the empty agent
-            RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json");
+            RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json", true);
             agentEmptyAdapter.start();
             LOG.info("Agent with empty adapter started!");
             //just wait a little bit for agent to run
@@ -262,10 +266,11 @@ public class AutoDiscoveryFunctionalTest {
         }
     }
 
-    private static void testLimitOfTDsInAdapter() {
+    private void testLimitOfTDsInAdapter(int numberOfAdapters, int numberOfTDsPerAdapter) {
 
         //start the agent with active adapter
-        RunAgent agentActiveAdapter = new RunAgent("agent-config-active.json");
+        String config = prepareAgentConfig("agent-config-active.json", numberOfAdapters);
+        RunAgent agentActiveAdapter = new RunAgent(config, false);
         agentActiveAdapter.start();
         LOG.info("Agent with active adapter started!");
         //just wait a little bit for agent to start
@@ -274,18 +279,25 @@ public class AutoDiscoveryFunctionalTest {
         } catch (Exception ex) {
         }
 
+        long start = System.currentTimeMillis();
 
         ActiveAdapter[] activeAdapters = new ActiveAdapter[100];
-        for (int i = 1; i < 6; i++) {
-            activeAdapters[i] = new ActiveAdapter("adapter-objects.json", i, 10);
+        for (int i = 1; i <= numberOfAdapters; i++) {
+            activeAdapters[i] = new ActiveAdapter("adapter-objects.json", i, numberOfTDsPerAdapter);
             activeAdapters[i].start();
         }
         try {
-            for (int i = 1; i < 6; i++)
+            for (int i = 1; i <= numberOfAdapters; i++)
                 activeAdapters[i].threadForAdapter.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        long finish1 = System.currentTimeMillis();
+        long timeElapsed1 = finish1 - start;
+
+        LOG.info(String.format("Test duration for all %d adapters with %d TDs each: %s", numberOfAdapters, numberOfTDsPerAdapter, String.format("%02d:%02d:%02d.%d\n\n", timeElapsed1 / (3600 * 1000),
+                timeElapsed1 / (60 * 1000) % 60, timeElapsed1 / 1000 % 60, timeElapsed1 % 1000)));
 
         //stop agent with active adapter
         agentActiveAdapter.stop();
@@ -298,7 +310,7 @@ public class AutoDiscoveryFunctionalTest {
         }
 
         //start the empty agent
-        RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json");
+        RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json", true);
         agentEmptyAdapter.start();
         LOG.info("Agent with empty adapter started!");
         //just wait a little bit for agent to run
@@ -313,4 +325,31 @@ public class AutoDiscoveryFunctionalTest {
 
     }
 
+    private String prepareAgentConfig(String configFile, int numberOfAdapters) {
+        try {
+            ClassLoader cl = getClass().getClassLoader();
+            String config = IOUtils
+                    .toString(cl.getResourceAsStream(configFile));
+            JSONObject newAgentConfig = new JSONObject(config);
+            JSONArray jarr = newAgentConfig.getJSONArray("adapters");
+            JSONObject adapter = jarr.getJSONObject(0);
+            String adapterId = adapter.getString("adapter-id");
+            JSONArray newjarr = new JSONArray();
+            for (int i = 1; i <= numberOfAdapters; i++) {
+                JSONObject newAdapter = new JSONObject(adapter.toString());
+                newAdapter.put("adapter-id", adapterId + i);
+                newjarr.put(i-1, newAdapter);
+            }
+            newAgentConfig.put("adapters", newjarr);
+
+            File tmpFile = File.createTempFile("agentConfig", ".json");
+            FileWriter writer = new FileWriter(tmpFile);
+            writer.write(newAgentConfig.toString());
+            writer.close();
+            return tmpFile.getAbsolutePath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
 }
