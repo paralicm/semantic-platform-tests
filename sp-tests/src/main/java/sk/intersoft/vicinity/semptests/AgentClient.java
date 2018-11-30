@@ -34,21 +34,25 @@ public class AgentClient {
             JSONObject newPayload = new JSONObject(payload);
             String adapterId = newPayload.getString("adapter-id");
             JSONArray jarr = newPayload.getJSONArray("thing-descriptions");
-            JSONObject oven = jarr.getJSONObject(0);
-            JSONObject refrigerator = jarr.getJSONObject(1);
+            JSONObject td1 = jarr.getJSONObject(0);
+            String td1Name = td1.getString("name");
+            String td1Oid = td1.getString("oid");
+            JSONObject td2 = jarr.getJSONObject(1);
+            String td2Name = td2.getString("name");
+            String td2Oid = td2.getString("oid");
             JSONArray newjarr = new JSONArray();
-            int index = 0, i = 0;
+            int index = 0, i = 1;
             while (index < numberOfTDs) {
-                JSONObject newOven = new JSONObject(oven.toString());
-                newOven.put("name", "Smart Oven " + i);
-                newOven.put("oid", "smart_oven_" + i);
-                newjarr.put(index++, newOven);
+                JSONObject newTD1 = new JSONObject(td1.toString());
+                newTD1.put("name", td1Name + i);
+                newTD1.put("oid", td1Oid + i);
+                newjarr.put(index++, newTD1);
                 if (index == numberOfTDs)
                     break;
-                JSONObject newFridge = new JSONObject(refrigerator.toString());
-                newFridge.put("name", "Smart Refrigerator "+i);
-                newFridge.put("oid", "smart_refrigerator_"+i);
-                newjarr.put(index++, newFridge);
+                JSONObject newTD2 = new JSONObject(td2.toString());
+                newTD2.put("name", td2Name+i);
+                newTD2.put("oid", td2Oid+i);
+                newjarr.put(index++, newTD2);
                 i++;
             }
             newPayload.put("adapter-id", adapterId+id);

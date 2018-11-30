@@ -1,10 +1,10 @@
 {
-  "adapter-id": "is-wp6.3-test01s-adapter-active",
+  "adapter-id": "is-wp6.3-test01u-adapter-active",
   "thing-descriptions": [
     {
       "type": "core:Device",
-      "oid": "smart_oven_0",
-      "name": "Smart oven 0",
+      "oid": "smart_oven_",
+      "name": "Smart oven ",
       "properties": [
         {
           "pid": "device_status",
@@ -874,8 +874,8 @@
     },
     {
       "type": "core:Device",
-      "oid": "smart_refrigerator_0",
-      "name": "Smart refrigerator 0",
+      "oid": "smart_refrigerator_",
+      "name": "Smart refrigerator ",
       "properties": [
         {
           "pid": "device_status",

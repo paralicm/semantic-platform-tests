@@ -1,0 +1,259 @@
+{
+  "adapter-id": "is-wp6.3-test01u-adapter-active",
+  "thing-descriptions": [
+    {
+      "oid": "RMEMS_01_",
+      "name": "Energy Management System 01 ",
+      "type": "core:Service",
+      "properties": [
+        {
+          "pid": "BMS_SoC",
+          "monitors": "adapters:ActualEnergyConsumedChargingSession",
+          "read_link": {
+            "href": "/device/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "property",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "PV_ActivePower",
+          "monitors": "adapters:ActivePowerProduction",
+          "read_link": {
+            "href": "/device/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "property",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "WT_ActivePower",
+          "monitors": "adapters:ActivePowerProduction",
+          "read_link": {
+            "href": "/device/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "property",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "Load_ActivePower",
+          "monitors": "adapters:ActivePowerProduction",
+          "read_link": {
+            "href": "/device/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "property",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "eid": "ParkingAndChargingStatus",
+          "monitors": "adapters:ChargeStatus",
+          "output": {
+            "type": "object",
+            "field": [
+              {
+                "name": "observed-property",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "value",
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "oid": "RMEMS_02_",
+      "name": "Energy Management System 02 ",
+      "type": "core:Service",
+      "properties": [
+        {
+          "pid": "BMS_SoC",
+          "monitors": "adapters:ActualEnergyConsumedChargingSession",
+          "read_link": {
+            "href": "/device/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "property",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "PV_ActivePower",
+          "monitors": "adapters:ActivePowerProduction",
+          "read_link": {
+            "href": "/device/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "property",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "WT_ActivePower",
+          "monitors": "adapters:ActivePowerProduction",
+          "read_link": {
+            "href": "/device/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "property",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "Load_ActivePower",
+          "monitors": "adapters:ActivePowerProduction",
+          "read_link": {
+            "href": "/device/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "property",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "eid": "ParkingAndChargingStatus",
+          "monitors": "adapters:ChargeStatus",
+          "output": {
+            "type": "object",
+            "field": [
+              {
+                "name": "observed-property",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "value",
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

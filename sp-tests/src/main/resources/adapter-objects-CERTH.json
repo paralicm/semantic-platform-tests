@@ -1,0 +1,380 @@
+{
+  "adapter-id": "is-wp6.3-test01u-adapter-active",
+  "thing-descriptions": [
+    {
+      "events": [],
+      "actions": [],
+      "oid": "bloodpressure_",
+      "name": "ForaBloodPressureMonitor ",
+      "properties": [
+        {
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "mediaType": "application/json",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "mmHg",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          },
+          "monitors": "adapters:SystolicBloodPressure",
+          "pid": "systolic"
+        },
+        {
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "mediaType": "application/json",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "mmHg",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          },
+          "monitors": "adapters:DiastolicBloodPressure",
+          "pid": "diastolic"
+        },
+        {
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "mediaType": "application/json",
+            "output": {
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "units": "bpm",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "units": "datetime",
+                    "type": "string"
+                  }
+                }
+              ],
+              "type": "object"
+            }
+          },
+          "monitors": "adapters:HeartRate",
+          "pid": "pulse"
+        }
+      ],
+      "type": "adapters:BloodPressureMonitor",
+      "version": "0.0.1"
+    },
+    {
+      "name": "VAS 3.2.2 - Urban Marathon ",
+      "type": "core:Service",
+      "version": "0.0.1",
+      "oid": "4_vas3.2.2_",
+      "properties": [
+        {
+          "pid": "push_measurement",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "Register-user",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "Get-rules",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "user_ranking",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "pid": "get_points_for_user",
+          "monitors": "adapters:OnOff",
+          "read_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "write_link": {
+            "href": "/objects/{oid}/properties/{pid}",
+            "input": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "adapterId",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "userId",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "output": {
+              "type": "object",
+              "field": [
+                {
+                  "name": "success",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                }
+              ]
+            }
+          }
+        }],
+      "actions": [],
+      "events": []
+    }
+  ]
+}

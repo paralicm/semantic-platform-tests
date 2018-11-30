@@ -1,0 +1,129 @@
+{
+  "adapter-id": "is-wp6.3-test01u-adapter-active",
+  "thing-descriptions": [
+    {
+      "oid": "3_cb44b166-0d3a-49cc-bcec-d88e354640a",
+      "name": "Door sensor A ",
+      "type": "core:Device",
+      "version": "0.1",
+      "keywords": [
+        "door",
+        "sensor"
+      ],
+      "properties": [
+        {
+          "pid": "state",
+          "monitors": "adapters:EntryExit",
+          "read_link": {
+            "href": "/objects/cb44b166-0d3a-49cc-bcec-d88e354640be/properties/state",
+            "output": {
+              "type": "object",
+              "description": "state of the door",
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "eid": "door_activity",
+          "monitors": "adapters:EntryExit",
+          "output": {
+            "type": "object",
+            "description": "state of the door",
+            "field": [
+              {
+                "name": "value",
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "timestamp",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "oid": "3_cb44b166-0d3a-49cc-bcec-d88e354640b",
+      "name": "Door sensor B ",
+      "type": "core:Device",
+      "version": "0.1",
+      "keywords": [
+        "door",
+        "sensor"
+      ],
+      "properties": [
+        {
+          "pid": "state",
+          "monitors": "adapters:EntryExit",
+          "read_link": {
+            "href": "/objects/cb44b166-0d3a-49cc-bcec-d88e354640be/properties/state",
+            "output": {
+              "type": "object",
+              "description": "state of the door",
+              "field": [
+                {
+                  "name": "value",
+                  "schema": {
+                    "type": "boolean"
+                  }
+                },
+                {
+                  "name": "timestamp",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "eid": "door_activity",
+          "monitors": "adapters:EntryExit",
+          "output": {
+            "type": "object",
+            "description": "state of the door",
+            "field": [
+              {
+                "name": "value",
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "timestamp",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

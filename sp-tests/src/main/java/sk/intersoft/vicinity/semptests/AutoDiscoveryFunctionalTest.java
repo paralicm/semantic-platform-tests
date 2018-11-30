@@ -25,7 +25,8 @@ public class AutoDiscoveryFunctionalTest {
             "c1aa668e-38ff-405d-a1dd-fbc09168ec74",
             "1d2b9e77-ff16-445e-a317-96fb20557d1f",
             "d50e838a-0619-4338-b185-1ba58dee17c9",
-            "46cbcd7f-d4ad-432f-bbb1-90f95b19b47a"
+            "46cbcd7f-d4ad-432f-bbb1-90f95b19b47a",
+            "1ebff626-210d-437d-8412-0bfaa02d6274"
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
@@ -53,7 +54,11 @@ public class AutoDiscoveryFunctionalTest {
 
         if (registrationLimitsTest)
         {
-            test01.testLimitOfTDsInAdapter(10, 5);
+            //test01.testLimitOfTDsInAdapter(10, 5, "adapter-objects.json");
+            //test01.testLimitOfTDsInAdapter(1, 80, "adapter-objects-CERTH.json");
+            //test01.testLimitOfTDsInAdapter(1, 55, "adapter-objects-AAU.json");
+            //test01.testLimitOfTDsInAdapter(1, 45, "adapter-objects.json");
+            test01.testLimitOfTDsInAdapter(5, 5, "adapter-objects-TM.json");
             System.exit(0);
         }
 
@@ -266,7 +271,7 @@ public class AutoDiscoveryFunctionalTest {
         }
     }
 
-    private void testLimitOfTDsInAdapter(int numberOfAdapters, int numberOfTDsPerAdapter) {
+    private void testLimitOfTDsInAdapter(int numberOfAdapters, int numberOfTDsPerAdapter, String skeletonTDs) {
 
         //start the agent with active adapter
         String config = prepareAgentConfig("agent-config-active.json", numberOfAdapters);
@@ -277,13 +282,14 @@ public class AutoDiscoveryFunctionalTest {
         try {
             Thread.sleep(20000);
         } catch (Exception ex) {
+            LOG.info("End of Agent sleep!");
         }
 
         long start = System.currentTimeMillis();
 
         ActiveAdapter[] activeAdapters = new ActiveAdapter[100];
         for (int i = 1; i <= numberOfAdapters; i++) {
-            activeAdapters[i] = new ActiveAdapter("adapter-objects.json", i, numberOfTDsPerAdapter);
+            activeAdapters[i] = new ActiveAdapter(skeletonTDs, i, numberOfTDsPerAdapter);
             activeAdapters[i].start();
         }
         try {
