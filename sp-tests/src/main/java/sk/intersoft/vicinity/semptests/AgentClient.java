@@ -12,6 +12,8 @@ import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.UUID;
+
 public class AgentClient {
     private static final Logger LOG = Logger.getLogger(AgentClient.class);
     private String uri = "http://localhost:9997/agent";
@@ -44,21 +46,21 @@ public class AgentClient {
             int index = 0, i = 1;
             while (index < numberOfTDs) {
                 JSONObject newTD1 = new JSONObject(td1.toString());
-                newTD1.put("name", td1Name + i);
-                newTD1.put("oid", td1Oid + i);
+                newTD1.put("name", UUID.randomUUID()); //td1Name + i);
+                newTD1.put("oid", UUID.randomUUID());
                 newjarr.put(index++, newTD1);
                 if (index == numberOfTDs)
                     break;
                 JSONObject newTD2 = new JSONObject(td2.toString());
-                newTD2.put("name", td2Name+i);
-                newTD2.put("oid", td2Oid+i);
+                newTD2.put("name", UUID.randomUUID()); //td2Name+i);
+                newTD2.put("oid", UUID.randomUUID());
                 newjarr.put(index++, newTD2);
                 i++;
             }
             newPayload.put("adapter-id", adapterId+id);
             newPayload.put("thing-descriptions", newjarr);
 
-            //LOG.info("NEWPAYLOAD --> " + newPayload.toString().substring(0,1000) + "...");
+            //LOG.info("NEWPAYLOAD --> " + newPayload.toString()); //.substring(0,1000) + "...");
             StringEntity entity = new StringEntity(newPayload.toString(),
                     ContentType.APPLICATION_FORM_URLENCODED);
             request.setEntity(entity);

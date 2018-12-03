@@ -22,11 +22,7 @@ public class AutoDiscoveryFunctionalTest {
     private static final Logger LOG = Logger.getLogger(AutoDiscoveryFunctionalTest.class);
 
     private static String[] agentIDs = new String[]{
-            "c1aa668e-38ff-405d-a1dd-fbc09168ec74",
-            "1d2b9e77-ff16-445e-a317-96fb20557d1f",
-            "d50e838a-0619-4338-b185-1ba58dee17c9",
-            "46cbcd7f-d4ad-432f-bbb1-90f95b19b47a",
-            "1ebff626-210d-437d-8412-0bfaa02d6274"
+            "16f44b57-c22c-4774-8970-40bc29c84471"
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
@@ -58,7 +54,7 @@ public class AutoDiscoveryFunctionalTest {
             //test01.testLimitOfTDsInAdapter(1, 80, "adapter-objects-CERTH.json");
             //test01.testLimitOfTDsInAdapter(1, 55, "adapter-objects-AAU.json");
             //test01.testLimitOfTDsInAdapter(1, 45, "adapter-objects.json");
-            test01.testLimitOfTDsInAdapter(5, 5, "adapter-objects-TM.json");
+            test01.testLimitOfTDsInAdapter(34, 5, "adapter-objects-AAU.json");
             System.exit(0);
         }
 
@@ -280,9 +276,9 @@ public class AutoDiscoveryFunctionalTest {
         LOG.info("Agent with active adapter started!");
         //just wait a little bit for agent to start
         try {
-            Thread.sleep(20000);
+            Thread.sleep(10000);
         } catch (Exception ex) {
-            LOG.info("End of Agent sleep!");
+            LOG.info("End of waiting period after starting an agent!");
         }
 
         long start = System.currentTimeMillis();
@@ -291,6 +287,11 @@ public class AutoDiscoveryFunctionalTest {
         for (int i = 1; i <= numberOfAdapters; i++) {
             activeAdapters[i] = new ActiveAdapter(skeletonTDs, i, numberOfTDsPerAdapter);
             activeAdapters[i].start();
+            try {
+                Thread.sleep(1000);
+            } catch (Exception ex) {
+                LOG.info("End of waiting period between start of two adapters!");
+            }
         }
         try {
             for (int i = 1; i <= numberOfAdapters; i++)
@@ -314,7 +315,7 @@ public class AutoDiscoveryFunctionalTest {
             Thread.sleep(10000);
         } catch (Exception ex) {
         }
-
+/*
         //start the empty agent
         RunAgent agentEmptyAdapter = new RunAgent("agent-config-empty.json", true);
         agentEmptyAdapter.start();
@@ -328,6 +329,7 @@ public class AutoDiscoveryFunctionalTest {
         //stop agent with empty adapter
         agentEmptyAdapter.stop();
         LOG.info("Agent with empty adapter stopped!");
+        */
 
     }
 
