@@ -22,7 +22,8 @@ public class AutoDiscoveryFunctionalTest {
     private static final Logger LOG = Logger.getLogger(AutoDiscoveryFunctionalTest.class);
 
     private static String[] agentIDs = new String[]{
-            "16f44b57-c22c-4774-8970-40bc29c84471"
+            "16f44b57-c22c-4774-8970-40bc29c84471",
+            "c2ea4521-7663-4246-a449-fe3d05175988"
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
@@ -54,7 +55,7 @@ public class AutoDiscoveryFunctionalTest {
             //test01.testLimitOfTDsInAdapter(1, 80, "adapter-objects-CERTH.json");
             //test01.testLimitOfTDsInAdapter(1, 55, "adapter-objects-AAU.json");
             //test01.testLimitOfTDsInAdapter(1, 45, "adapter-objects.json");
-            test01.testLimitOfTDsInAdapter(34, 5, "adapter-objects-AAU.json");
+            test01.testLimitOfTDsInAdapter(5, 5, "adapter-objects-TM.json");
             System.exit(0);
         }
 
