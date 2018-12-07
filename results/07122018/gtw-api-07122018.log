@@ -1,0 +1,2307 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Dec 07, 2018 4:43:38 PM eu.bavenir.ogwapi.App initialize
+CONFIG: Log file: log/18-12-07T16_43_38.805-gateway.log
+Dec 07, 2018 4:43:38 PM eu.bavenir.ogwapi.App main
+FINE: Vicinity Gateway API initialized.
+Dec 07, 2018 4:43:38 PM eu.bavenir.ogwapi.App main
+FINE: API thread started.
+Dec 07, 2018 4:43:39 PM eu.bavenir.ogwapi.restapi.RestletThread run
+CONFIG: HTTP server configured.
+Dec 07, 2018 4:43:39 PM eu.bavenir.ogwapi.restapi.Api configureChallengeScheme
+CONFIG: HTTP Basic challenge authentication scheme configured.
+Dec 07, 2018 4:43:39 PM org.restlet.engine.connector.NetServerHelper start
+INFO: Starting the internal [HTTP/1.1] server on port 8181
+Dec 07, 2018 4:43:39 PM org.restlet.Application start
+INFO: Starting eu.bavenir.ogwapi.restapi.Api application
+Dec 07, 2018 4:43:39 PM org.restlet.engine.application.ApplicationHelper start
+FINE: By default, an application should be attached to a parent component in order to let application's outbound root handle calls properly.
+Dec 07, 2018 4:43:39 PM eu.bavenir.ogwapi.restapi.RestletThread run
+FINE: HTTP server component started.
+Dec 07, 2018 4:43:51 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'b7aecd4e-3438-4536-877d-8ddce998101a' is not connected yet.
+Dec 07, 2018 4:43:51 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:43:51 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:43:51 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'b7aecd4e-3438-4536-877d-8ddce998101a@bavenir.eu'
+Dec 07, 2018 4:43:52 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:43:53 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'b7aecd4e-3438-4536-877d-8ddce998101a' was established.
+Dec 07, 2018 4:43:53 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:43:53 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:43:53 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:43:53 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:43:53 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:43:53 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:43:53 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:43:53	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	GET	/api/objects/login	-	200	89	0	1408	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:43:53 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:43:53 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:43:53 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:43:53 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:43:53 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:43:53 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:43:53 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:43:53 PM org.restlet.engine.application.ApplicationHelper$1 handle
+FINE: Added runtime client for protocol: HTTPS
+Dec 07, 2018 4:43:53 PM org.restlet.engine.connector.HttpClientHelper start
+INFO: Starting the internal HTTP client
+Dec 07, 2018 4:43:53 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:43:53 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:43:53	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	GET	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	28	0	511	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:00 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:00 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:00 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:00 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:00 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:00 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:00 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:00	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	GET	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	28	0	221	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:00 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:00 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:00 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:00 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.accept(org.restlet.representation.Representation), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: POST, input: json, value: json, output: json, query: null]"= 0.5
+Dec 07, 2018 4:44:00 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[application/json]"= 0.33333334
+Dec 07, 2018 4:44:00 PM org.restlet.service.ConverterService toObject
+FINE: The following converter was selected for the [application/json,UTF-8] representation: org.restlet.engine.converter.DefaultConverter@8592e28
+Dec 07, 2018 4:44:00 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for InputRepresentation: DefaultConverter
+Dec 07, 2018 4:44:00 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 2.5E-4
+Dec 07, 2018 4:44:00 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:00 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:00 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:00 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:00 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:00 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:00 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:01 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:01 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:01	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	GET	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	28	0	286	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:01 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:01 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:01 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:01 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.accept(org.restlet.representation.Representation), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: POST, input: json, value: json, output: json, query: null]"= 0.5
+Dec 07, 2018 4:44:01 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[application/json]"= 0.33333334
+Dec 07, 2018 4:44:01 PM org.restlet.service.ConverterService toObject
+FINE: The following converter was selected for the [application/json,UTF-8] representation: org.restlet.engine.converter.DefaultConverter@8592e28
+Dec 07, 2018 4:44:01 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for InputRepresentation: DefaultConverter
+Dec 07, 2018 4:44:01 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 2.5E-4
+Dec 07, 2018 4:44:01 PM org.restlet.engine.connector.HttpClientHelper stop
+INFO: Stopping the internal HTTP client
+Dec 07, 2018 4:44:01 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:01 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:01 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:01 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:01 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:01 PM org.restlet.engine.connector.HttpClientHelper start
+INFO: Starting the internal HTTP client
+Dec 07, 2018 4:44:01 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:01 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:01	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	GET	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	28	0	195	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:01 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:01 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:01 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:01 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:01 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:01 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.accept(org.restlet.representation.Representation), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: POST, input: json, value: json, output: json, query: null]"= 0.5
+Dec 07, 2018 4:44:01 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[application/json]"= 0.33333334
+Dec 07, 2018 4:44:01 PM org.restlet.service.ConverterService toObject
+FINE: The following converter was selected for the [application/json,UTF-8] representation: org.restlet.engine.converter.DefaultConverter@8592e28
+Dec 07, 2018 4:44:02 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for InputRepresentation: DefaultConverter
+Dec 07, 2018 4:44:02 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 2.5E-4
+Dec 07, 2018 4:44:02 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:02 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:02 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:02 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:02 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:02 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:02 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:03 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:03 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:03	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	GET	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	28	0	227	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:03 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:03 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:03 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:03 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.accept(org.restlet.representation.Representation), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: POST, input: json, value: json, output: json, query: null]"= 0.5
+Dec 07, 2018 4:44:03 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[application/json]"= 0.33333334
+Dec 07, 2018 4:44:03 PM org.restlet.service.ConverterService toObject
+FINE: The following converter was selected for the [application/json,UTF-8] representation: org.restlet.engine.converter.DefaultConverter@8592e28
+Dec 07, 2018 4:44:03 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for InputRepresentation: DefaultConverter
+Dec 07, 2018 4:44:03 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 2.5E-4
+Dec 07, 2018 4:44:03 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:03 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:03 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:03 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:03 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:03 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:03 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:03	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	GET	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	28	0	187	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:03 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:03 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:03 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/properties/{pid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/actions/{aid}/tasks/{tid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/events/{eid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/{oid}" URI pattern: 0.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/agents/{agid}/objects" URI pattern: 1.0
+Dec 07, 2018 4:44:03 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/agents/{agid}/objects" -> Finder for AgentsAgidObjects
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 52 characters were matched
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects". No remaining part to match
+Dec 07, 2018 4:44:03 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:03 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects.accept(org.restlet.representation.Representation), javaClass: class eu.bavenir.ogwapi.restapi.services.AgentsAgidObjects, restletMethod: POST, input: json, value: json, output: json, query: null]"= 0.5
+Dec 07, 2018 4:44:03 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[application/json]"= 0.33333334
+Dec 07, 2018 4:44:03 PM org.restlet.service.ConverterService toObject
+FINE: The following converter was selected for the [application/json,UTF-8] representation: org.restlet.engine.converter.DefaultConverter@8592e28
+Dec 07, 2018 4:44:03 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for InputRepresentation: DefaultConverter
+Dec 07, 2018 4:44:03 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 2.5E-4
+Dec 07, 2018 4:44:06 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:06 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:06	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	POST	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	1517	3929	5744	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:06 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '116276c3-735b-4ea5-a270-f530a9e69eb9' is not connected yet.
+Dec 07, 2018 4:44:06 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:06 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:06 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '116276c3-735b-4ea5-a270-f530a9e69eb9@bavenir.eu'
+Dec 07, 2018 4:44:06 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:06 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '116276c3-735b-4ea5-a270-f530a9e69eb9' was established.
+Dec 07, 2018 4:44:06 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:06 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 116276c3-735b-4ea5-a270-f530a9e69eb9.
+Dec 07, 2018 4:44:06 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "116276c3-735b-4ea5-a270-f530a9e69eb9" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:06 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:06 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:06 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:06 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:06 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:06 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:06 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:06 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:06 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:06	127.0.0.1	116276c3-735b-4ea5-a270-f530a9e69eb9	-	8181	GET	/api/objects/login	-	200	89	0	371	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '223541a9-4cdb-46a0-b4d6-e92128e720ca' is not connected yet.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '223541a9-4cdb-46a0-b4d6-e92128e720ca@bavenir.eu'
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '223541a9-4cdb-46a0-b4d6-e92128e720ca' was established.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:07 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 223541a9-4cdb-46a0-b4d6-e92128e720ca.
+Dec 07, 2018 4:44:07 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "223541a9-4cdb-46a0-b4d6-e92128e720ca" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:07 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:07 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:07 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:07 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:07 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:07 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:07 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:07 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:07 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:07	127.0.0.1	223541a9-4cdb-46a0-b4d6-e92128e720ca	-	8181	GET	/api/objects/login	-	200	89	0	340	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'e66e627d-8ca7-45dd-8957-4b040a628e04' is not connected yet.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'e66e627d-8ca7-45dd-8957-4b040a628e04@bavenir.eu'
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'e66e627d-8ca7-45dd-8957-4b040a628e04' was established.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:07 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: e66e627d-8ca7-45dd-8957-4b040a628e04.
+Dec 07, 2018 4:44:07 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "e66e627d-8ca7-45dd-8957-4b040a628e04" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:07 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:07 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:07 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:07 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:07 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:07 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:07 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:07 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:07 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:07	127.0.0.1	e66e627d-8ca7-45dd-8957-4b040a628e04	-	8181	GET	/api/objects/login	-	200	89	0	319	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'd6f3ff80-db13-4aa5-8d64-15bea18ca424' is not connected yet.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'd6f3ff80-db13-4aa5-8d64-15bea18ca424@bavenir.eu'
+Dec 07, 2018 4:44:07 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:08 PM org.restlet.engine.connector.HttpClientHelper stop
+INFO: Stopping the internal HTTP client
+Dec 07, 2018 4:44:08 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:08 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:08	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	POST	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	1517	3929	6909	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'c3cc146f-12ca-4927-8653-2bcacbd8f166' is not connected yet.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'c3cc146f-12ca-4927-8653-2bcacbd8f166@bavenir.eu'
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'd6f3ff80-db13-4aa5-8d64-15bea18ca424' was established.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:08 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: d6f3ff80-db13-4aa5-8d64-15bea18ca424.
+Dec 07, 2018 4:44:08 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "d6f3ff80-db13-4aa5-8d64-15bea18ca424" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:08 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:08 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:08 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:08 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:08 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:08	127.0.0.1	d6f3ff80-db13-4aa5-8d64-15bea18ca424	-	8181	GET	/api/objects/login	-	200	89	0	449	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '69b68623-d161-496a-abee-14037aa7ad1f' is not connected yet.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '69b68623-d161-496a-abee-14037aa7ad1f@bavenir.eu'
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'c3cc146f-12ca-4927-8653-2bcacbd8f166' was established.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:08 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: c3cc146f-12ca-4927-8653-2bcacbd8f166.
+Dec 07, 2018 4:44:08 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "c3cc146f-12ca-4927-8653-2bcacbd8f166" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:08 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:08 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:08 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:08 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:08 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:08	127.0.0.1	c3cc146f-12ca-4927-8653-2bcacbd8f166	-	8181	GET	/api/objects/login	-	200	89	0	331	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'e2403f1c-ce66-4a2a-92f7-678ee54d1556' is not connected yet.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'e2403f1c-ce66-4a2a-92f7-678ee54d1556@bavenir.eu'
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '69b68623-d161-496a-abee-14037aa7ad1f' was established.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:08 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 69b68623-d161-496a-abee-14037aa7ad1f.
+Dec 07, 2018 4:44:08 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "69b68623-d161-496a-abee-14037aa7ad1f" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:08 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:08 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:08 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:08 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:08 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:08	127.0.0.1	69b68623-d161-496a-abee-14037aa7ad1f	-	8181	GET	/api/objects/login	-	200	89	0	381	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'e2403f1c-ce66-4a2a-92f7-678ee54d1556' was established.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:08 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: e2403f1c-ce66-4a2a-92f7-678ee54d1556.
+Dec 07, 2018 4:44:08 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "e2403f1c-ce66-4a2a-92f7-678ee54d1556" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:08 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:08 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:08 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:08 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:08 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:08 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:08	127.0.0.1	e2403f1c-ce66-4a2a-92f7-678ee54d1556	-	8181	GET	/api/objects/login	-	200	89	0	407	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '236a4e9f-e255-48c3-8482-fe8855dc8499' is not connected yet.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '236a4e9f-e255-48c3-8482-fe8855dc8499@bavenir.eu'
+Dec 07, 2018 4:44:08 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '236a4e9f-e255-48c3-8482-fe8855dc8499' was established.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:09 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 236a4e9f-e255-48c3-8482-fe8855dc8499.
+Dec 07, 2018 4:44:09 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "236a4e9f-e255-48c3-8482-fe8855dc8499" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:09 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:09 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:09 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:09 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:09 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:09 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:09 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:09 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:09 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:09	127.0.0.1	236a4e9f-e255-48c3-8482-fe8855dc8499	-	8181	GET	/api/objects/login	-	200	89	0	346	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '7a5e3bf1-8b33-4f48-8765-4e8bdb16f083' is not connected yet.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '7a5e3bf1-8b33-4f48-8765-4e8bdb16f083@bavenir.eu'
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '7a5e3bf1-8b33-4f48-8765-4e8bdb16f083' was established.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:09 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 7a5e3bf1-8b33-4f48-8765-4e8bdb16f083.
+Dec 07, 2018 4:44:09 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "7a5e3bf1-8b33-4f48-8765-4e8bdb16f083" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:09 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:09 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:09 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:09 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:09 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:09 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:09 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:09 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:09 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:09	127.0.0.1	7a5e3bf1-8b33-4f48-8765-4e8bdb16f083	-	8181	GET	/api/objects/login	-	200	89	0	382	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'cd33a7c3-ecec-41a6-bf6b-30d01abe5c89' is not connected yet.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'cd33a7c3-ecec-41a6-bf6b-30d01abe5c89@bavenir.eu'
+Dec 07, 2018 4:44:09 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:10 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'cd33a7c3-ecec-41a6-bf6b-30d01abe5c89' was established.
+Dec 07, 2018 4:44:10 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:10 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: cd33a7c3-ecec-41a6-bf6b-30d01abe5c89.
+Dec 07, 2018 4:44:10 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "cd33a7c3-ecec-41a6-bf6b-30d01abe5c89" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:10 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:10 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:10 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:10 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:10 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:10 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:10 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:10 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:10 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:10	127.0.0.1	cd33a7c3-ecec-41a6-bf6b-30d01abe5c89	-	8181	GET	/api/objects/login	-	200	89	0	386	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:11 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:11 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:11	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	POST	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	1517	3929	9681	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:11 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '28b4a1b5-2146-4b6f-85cf-37348e735654' is not connected yet.
+Dec 07, 2018 4:44:11 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:11 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:11 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '28b4a1b5-2146-4b6f-85cf-37348e735654@bavenir.eu'
+Dec 07, 2018 4:44:11 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '28b4a1b5-2146-4b6f-85cf-37348e735654' was established.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:12 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 28b4a1b5-2146-4b6f-85cf-37348e735654.
+Dec 07, 2018 4:44:12 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "28b4a1b5-2146-4b6f-85cf-37348e735654" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:12 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:12 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:12 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:12 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:12 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:12	127.0.0.1	28b4a1b5-2146-4b6f-85cf-37348e735654	-	8181	GET	/api/objects/login	-	200	89	0	316	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'ad84a071-7061-4986-8f76-1e171149095f' is not connected yet.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'ad84a071-7061-4986-8f76-1e171149095f@bavenir.eu'
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:12 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:12 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:12	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	POST	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	1517	3929	9395	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'ad84a071-7061-4986-8f76-1e171149095f' was established.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:12 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: ad84a071-7061-4986-8f76-1e171149095f.
+Dec 07, 2018 4:44:12 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "ad84a071-7061-4986-8f76-1e171149095f" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:12 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:12 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:12 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:12 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:12 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:12	127.0.0.1	ad84a071-7061-4986-8f76-1e171149095f	-	8181	GET	/api/objects/login	-	200	89	0	362	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '5f7acf07-b06b-44e2-b43d-a6135993e698' is not connected yet.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '5f7acf07-b06b-44e2-b43d-a6135993e698@bavenir.eu'
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '385ea25a-831e-4317-972e-2a06b8fee0de' is not connected yet.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '385ea25a-831e-4317-972e-2a06b8fee0de@bavenir.eu'
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '385ea25a-831e-4317-972e-2a06b8fee0de' was established.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:12 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 385ea25a-831e-4317-972e-2a06b8fee0de.
+Dec 07, 2018 4:44:12 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "385ea25a-831e-4317-972e-2a06b8fee0de" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:12 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:12 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:12 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:12 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:12 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:12	127.0.0.1	385ea25a-831e-4317-972e-2a06b8fee0de	-	8181	GET	/api/objects/login	-	200	89	0	321	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '5f7acf07-b06b-44e2-b43d-a6135993e698' was established.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:12 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 5f7acf07-b06b-44e2-b43d-a6135993e698.
+Dec 07, 2018 4:44:12 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "5f7acf07-b06b-44e2-b43d-a6135993e698" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:12 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:12 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:12 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:12 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:12 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:12 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:12	127.0.0.1	5f7acf07-b06b-44e2-b43d-a6135993e698	-	8181	GET	/api/objects/login	-	200	89	0	365	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'e6b7a128-9190-4b63-abba-ce668a99b6a2' is not connected yet.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'e6b7a128-9190-4b63-abba-ce668a99b6a2@bavenir.eu'
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'bb15798f-0ebd-4c9f-92e3-94c0dafb7f18' is not connected yet.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'bb15798f-0ebd-4c9f-92e3-94c0dafb7f18@bavenir.eu'
+Dec 07, 2018 4:44:12 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:12 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for ConnectionClosingRepresentation: DefaultConverter
+Dec 07, 2018 4:44:12 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:12	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	POST	/api/agents/b7aecd4e-3438-4536-877d-8ddce998101a/objects	-	200	1517	3929	9012	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'abd1673c-8848-443f-bfd5-76cae5a3a82a' is not connected yet.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'abd1673c-8848-443f-bfd5-76cae5a3a82a@bavenir.eu'
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'e6b7a128-9190-4b63-abba-ce668a99b6a2' was established.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:13 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: e6b7a128-9190-4b63-abba-ce668a99b6a2.
+Dec 07, 2018 4:44:13 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "e6b7a128-9190-4b63-abba-ce668a99b6a2" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:13 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:13 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:13 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:13	127.0.0.1	e6b7a128-9190-4b63-abba-ce668a99b6a2	-	8181	GET	/api/objects/login	-	200	89	0	327	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'bb15798f-0ebd-4c9f-92e3-94c0dafb7f18' was established.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:13 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: bb15798f-0ebd-4c9f-92e3-94c0dafb7f18.
+Dec 07, 2018 4:44:13 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "bb15798f-0ebd-4c9f-92e3-94c0dafb7f18" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:13 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:13 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:13 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:13	127.0.0.1	bb15798f-0ebd-4c9f-92e3-94c0dafb7f18	-	8181	GET	/api/objects/login	-	200	89	0	313	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f' is not connected yet.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f@bavenir.eu'
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6' is not connected yet.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6@bavenir.eu'
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'abd1673c-8848-443f-bfd5-76cae5a3a82a' was established.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:13 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: abd1673c-8848-443f-bfd5-76cae5a3a82a.
+Dec 07, 2018 4:44:13 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "abd1673c-8848-443f-bfd5-76cae5a3a82a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:13 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:13 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:13 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:13	127.0.0.1	abd1673c-8848-443f-bfd5-76cae5a3a82a	-	8181	GET	/api/objects/login	-	200	89	0	319	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'e4a7d1be-ca25-4166-8d9c-929571a401f1' is not connected yet.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'e4a7d1be-ca25-4166-8d9c-929571a401f1@bavenir.eu'
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6' was established.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:13 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6.
+Dec 07, 2018 4:44:13 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:13 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:13 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:13 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:13	127.0.0.1	ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6	-	8181	GET	/api/objects/login	-	200	89	0	328	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f' was established.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:13 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f.
+Dec 07, 2018 4:44:13 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:13 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:13 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:13 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:13	127.0.0.1	f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f	-	8181	GET	/api/objects/login	-	200	89	0	363	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '22ca1429-3014-4ea1-b572-099c94450045' is not connected yet.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '22ca1429-3014-4ea1-b572-099c94450045@bavenir.eu'
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'e4a7d1be-ca25-4166-8d9c-929571a401f1' was established.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:13 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: e4a7d1be-ca25-4166-8d9c-929571a401f1.
+Dec 07, 2018 4:44:13 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "e4a7d1be-ca25-4166-8d9c-929571a401f1" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:13 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:13 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:13 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:13 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:13 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:13	127.0.0.1	e4a7d1be-ca25-4166-8d9c-929571a401f1	-	8181	GET	/api/objects/login	-	200	89	0	324	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: 'b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de' is not connected yet.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as 'b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de@bavenir.eu'
+Dec 07, 2018 4:44:13 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '22ca1429-3014-4ea1-b572-099c94450045' was established.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:14 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 22ca1429-3014-4ea1-b572-099c94450045.
+Dec 07, 2018 4:44:14 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "22ca1429-3014-4ea1-b572-099c94450045" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:14 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:14 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:14 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:14 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:14 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:14	127.0.0.1	22ca1429-3014-4ea1-b572-099c94450045	-	8181	GET	/api/objects/login	-	200	89	0	362	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '94e9b6c9-9331-400e-9974-156da14e1b67' is not connected yet.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '94e9b6c9-9331-400e-9974-156da14e1b67@bavenir.eu'
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for 'b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de' was established.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:14 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de.
+Dec 07, 2018 4:44:14 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:14 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:14 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:14 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:14 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:14 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:14	127.0.0.1	b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de	-	8181	GET	/api/objects/login	-	200	89	0	368	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '5f0fe143-36f0-454f-a5dd-471275c06eaa' is not connected yet.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '5f0fe143-36f0-454f-a5dd-471275c06eaa@bavenir.eu'
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '94e9b6c9-9331-400e-9974-156da14e1b67' was established.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:14 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 94e9b6c9-9331-400e-9974-156da14e1b67.
+Dec 07, 2018 4:44:14 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "94e9b6c9-9331-400e-9974-156da14e1b67" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:14 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:14 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:14 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:14 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:14 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:14	127.0.0.1	94e9b6c9-9331-400e-9974-156da14e1b67	-	8181	GET	/api/objects/login	-	200	89	0	335	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '5f0fe143-36f0-454f-a5dd-471275c06eaa' was established.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:14 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 5f0fe143-36f0-454f-a5dd-471275c06eaa.
+Dec 07, 2018 4:44:14 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "5f0fe143-36f0-454f-a5dd-471275c06eaa" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:14 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:14 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:14 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:14 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:14 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:14 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:14	127.0.0.1	5f0fe143-36f0-454f-a5dd-471275c06eaa	-	8181	GET	/api/objects/login	-	200	89	0	380	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.CommunicationManager isConnected
+INFO: Object ID: '6ad6a66a-aa97-41b1-83b1-5adaa0f74c25' is not connected yet.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: Dummy payloads enabled, all calls to an Agent via this connector will be simulated.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.connectors.http.RestAgentConnector <init>
+CONFIG: REST Agent Connector: HTTPS protocol disabled for Agent communication.
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: Creating a new connection to XMPP server 'development.bavenir.eu:5222' as '6ad6a66a-aa97-41b1-83b1-5adaa0f74c25@bavenir.eu'
+Dec 07, 2018 4:44:14 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine buildNewConnection
+CONFIG: XMPP secure connection is disabled.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager establishConnection
+INFO: Connection for '6ad6a66a-aa97-41b1-83b1-5adaa0f74c25' was established.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 6ad6a66a-aa97-41b1-83b1-5adaa0f74c25.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "6ad6a66a-aa97-41b1-83b1-5adaa0f74c25" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/login" -> Finder for ObjectsLogin
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 14 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/login". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogin.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogin, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	6ad6a66a-aa97-41b1-83b1-5adaa0f74c25	-	8181	GET	/api/objects/login	-	200	89	0	411	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 28b4a1b5-2146-4b6f-85cf-37348e735654.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "28b4a1b5-2146-4b6f-85cf-37348e735654" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '28b4a1b5-2146-4b6f-85cf-37348e735654' disconnected.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '28b4a1b5-2146-4b6f-85cf-37348e735654' destroyed.
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	28b4a1b5-2146-4b6f-85cf-37348e735654	-	8181	GET	/api/objects/logout	-	200	90	0	47	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: ad84a071-7061-4986-8f76-1e171149095f.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "ad84a071-7061-4986-8f76-1e171149095f" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'ad84a071-7061-4986-8f76-1e171149095f' disconnected.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'ad84a071-7061-4986-8f76-1e171149095f' destroyed.
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	ad84a071-7061-4986-8f76-1e171149095f	-	8181	GET	/api/objects/logout	-	200	90	0	58	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 385ea25a-831e-4317-972e-2a06b8fee0de.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "385ea25a-831e-4317-972e-2a06b8fee0de" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '385ea25a-831e-4317-972e-2a06b8fee0de' disconnected.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '385ea25a-831e-4317-972e-2a06b8fee0de' destroyed.
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	385ea25a-831e-4317-972e-2a06b8fee0de	-	8181	GET	/api/objects/logout	-	200	90	0	47	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: e6b7a128-9190-4b63-abba-ce668a99b6a2.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "e6b7a128-9190-4b63-abba-ce668a99b6a2" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'e6b7a128-9190-4b63-abba-ce668a99b6a2' disconnected.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'e6b7a128-9190-4b63-abba-ce668a99b6a2' destroyed.
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	e6b7a128-9190-4b63-abba-ce668a99b6a2	-	8181	GET	/api/objects/logout	-	200	90	0	47	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f' disconnected.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f' destroyed.
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	f4c3ae47-eb3b-46b0-9dff-6f2c7e4bc12f	-	8181	GET	/api/objects/logout	-	200	90	0	51	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: c3cc146f-12ca-4927-8653-2bcacbd8f166.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "c3cc146f-12ca-4927-8653-2bcacbd8f166" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'c3cc146f-12ca-4927-8653-2bcacbd8f166' disconnected.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'c3cc146f-12ca-4927-8653-2bcacbd8f166' destroyed.
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	c3cc146f-12ca-4927-8653-2bcacbd8f166	-	8181	GET	/api/objects/logout	-	200	90	0	88	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: e2403f1c-ce66-4a2a-92f7-678ee54d1556.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "e2403f1c-ce66-4a2a-92f7-678ee54d1556" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'e2403f1c-ce66-4a2a-92f7-678ee54d1556' disconnected.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'e2403f1c-ce66-4a2a-92f7-678ee54d1556' destroyed.
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	e2403f1c-ce66-4a2a-92f7-678ee54d1556	-	8181	GET	/api/objects/logout	-	200	90	0	55	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 236a4e9f-e255-48c3-8482-fe8855dc8499.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "236a4e9f-e255-48c3-8482-fe8855dc8499" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '236a4e9f-e255-48c3-8482-fe8855dc8499' disconnected.
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '236a4e9f-e255-48c3-8482-fe8855dc8499' destroyed.
+Dec 07, 2018 4:44:15 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:15 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:15	127.0.0.1	236a4e9f-e255-48c3-8482-fe8855dc8499	-	8181	GET	/api/objects/logout	-	200	90	0	51	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:15 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:15 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 7a5e3bf1-8b33-4f48-8765-4e8bdb16f083.
+Dec 07, 2018 4:44:15 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "7a5e3bf1-8b33-4f48-8765-4e8bdb16f083" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:15 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:15 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:15 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '7a5e3bf1-8b33-4f48-8765-4e8bdb16f083' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '7a5e3bf1-8b33-4f48-8765-4e8bdb16f083' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	7a5e3bf1-8b33-4f48-8765-4e8bdb16f083	-	8181	GET	/api/objects/logout	-	200	90	0	51	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: cd33a7c3-ecec-41a6-bf6b-30d01abe5c89.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "cd33a7c3-ecec-41a6-bf6b-30d01abe5c89" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'cd33a7c3-ecec-41a6-bf6b-30d01abe5c89' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'cd33a7c3-ecec-41a6-bf6b-30d01abe5c89' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	cd33a7c3-ecec-41a6-bf6b-30d01abe5c89	-	8181	GET	/api/objects/logout	-	200	90	0	51	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 116276c3-735b-4ea5-a270-f530a9e69eb9.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "116276c3-735b-4ea5-a270-f530a9e69eb9" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '116276c3-735b-4ea5-a270-f530a9e69eb9' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '116276c3-735b-4ea5-a270-f530a9e69eb9' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	116276c3-735b-4ea5-a270-f530a9e69eb9	-	8181	GET	/api/objects/logout	-	200	90	0	58	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 223541a9-4cdb-46a0-b4d6-e92128e720ca.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "223541a9-4cdb-46a0-b4d6-e92128e720ca" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '223541a9-4cdb-46a0-b4d6-e92128e720ca' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '223541a9-4cdb-46a0-b4d6-e92128e720ca' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	223541a9-4cdb-46a0-b4d6-e92128e720ca	-	8181	GET	/api/objects/logout	-	200	90	0	47	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: e66e627d-8ca7-45dd-8957-4b040a628e04.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "e66e627d-8ca7-45dd-8957-4b040a628e04" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'e66e627d-8ca7-45dd-8957-4b040a628e04' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'e66e627d-8ca7-45dd-8957-4b040a628e04' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	e66e627d-8ca7-45dd-8957-4b040a628e04	-	8181	GET	/api/objects/logout	-	200	90	0	49	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: d6f3ff80-db13-4aa5-8d64-15bea18ca424.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "d6f3ff80-db13-4aa5-8d64-15bea18ca424" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'd6f3ff80-db13-4aa5-8d64-15bea18ca424' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'd6f3ff80-db13-4aa5-8d64-15bea18ca424' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	d6f3ff80-db13-4aa5-8d64-15bea18ca424	-	8181	GET	/api/objects/logout	-	200	90	0	52	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 69b68623-d161-496a-abee-14037aa7ad1f.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "69b68623-d161-496a-abee-14037aa7ad1f" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '69b68623-d161-496a-abee-14037aa7ad1f' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '69b68623-d161-496a-abee-14037aa7ad1f' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	69b68623-d161-496a-abee-14037aa7ad1f	-	8181	GET	/api/objects/logout	-	200	90	0	53	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: abd1673c-8848-443f-bfd5-76cae5a3a82a.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "abd1673c-8848-443f-bfd5-76cae5a3a82a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'abd1673c-8848-443f-bfd5-76cae5a3a82a' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'abd1673c-8848-443f-bfd5-76cae5a3a82a' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	abd1673c-8848-443f-bfd5-76cae5a3a82a	-	8181	GET	/api/objects/logout	-	200	90	0	60	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: e4a7d1be-ca25-4166-8d9c-929571a401f1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "e4a7d1be-ca25-4166-8d9c-929571a401f1" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'e4a7d1be-ca25-4166-8d9c-929571a401f1' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'e4a7d1be-ca25-4166-8d9c-929571a401f1' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	e4a7d1be-ca25-4166-8d9c-929571a401f1	-	8181	GET	/api/objects/logout	-	200	90	0	54	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:16 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de.
+Dec 07, 2018 4:44:16 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:16 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:16 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:16 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de' disconnected.
+Dec 07, 2018 4:44:16 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de' destroyed.
+Dec 07, 2018 4:44:16 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:16 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:16	127.0.0.1	b1bc3bb3-9c9a-4dcc-8c44-d4df11ab53de	-	8181	GET	/api/objects/logout	-	200	90	0	52	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:17 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 5f0fe143-36f0-454f-a5dd-471275c06eaa.
+Dec 07, 2018 4:44:17 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "5f0fe143-36f0-454f-a5dd-471275c06eaa" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '5f0fe143-36f0-454f-a5dd-471275c06eaa' disconnected.
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '5f0fe143-36f0-454f-a5dd-471275c06eaa' destroyed.
+Dec 07, 2018 4:44:17 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:17 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:17	127.0.0.1	5f0fe143-36f0-454f-a5dd-471275c06eaa	-	8181	GET	/api/objects/logout	-	200	90	0	51	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:17 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 6ad6a66a-aa97-41b1-83b1-5adaa0f74c25.
+Dec 07, 2018 4:44:17 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "6ad6a66a-aa97-41b1-83b1-5adaa0f74c25" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '6ad6a66a-aa97-41b1-83b1-5adaa0f74c25' disconnected.
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '6ad6a66a-aa97-41b1-83b1-5adaa0f74c25' destroyed.
+Dec 07, 2018 4:44:17 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:17 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:17	127.0.0.1	6ad6a66a-aa97-41b1-83b1-5adaa0f74c25	-	8181	GET	/api/objects/logout	-	200	90	0	50	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:17 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 5f7acf07-b06b-44e2-b43d-a6135993e698.
+Dec 07, 2018 4:44:17 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "5f7acf07-b06b-44e2-b43d-a6135993e698" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '5f7acf07-b06b-44e2-b43d-a6135993e698' disconnected.
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '5f7acf07-b06b-44e2-b43d-a6135993e698' destroyed.
+Dec 07, 2018 4:44:17 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:17 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:17	127.0.0.1	5f7acf07-b06b-44e2-b43d-a6135993e698	-	8181	GET	/api/objects/logout	-	200	90	0	57	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:17 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: bb15798f-0ebd-4c9f-92e3-94c0dafb7f18.
+Dec 07, 2018 4:44:17 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "bb15798f-0ebd-4c9f-92e3-94c0dafb7f18" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'bb15798f-0ebd-4c9f-92e3-94c0dafb7f18' disconnected.
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'bb15798f-0ebd-4c9f-92e3-94c0dafb7f18' destroyed.
+Dec 07, 2018 4:44:17 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:17 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:17	127.0.0.1	bb15798f-0ebd-4c9f-92e3-94c0dafb7f18	-	8181	GET	/api/objects/logout	-	200	90	0	67	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:17 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6.
+Dec 07, 2018 4:44:17 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6' disconnected.
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6' destroyed.
+Dec 07, 2018 4:44:17 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:17 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:17	127.0.0.1	ba953343-f2e8-4b32-ad8d-ece0a5d2a1c6	-	8181	GET	/api/objects/logout	-	200	90	0	57	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:17 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 22ca1429-3014-4ea1-b572-099c94450045.
+Dec 07, 2018 4:44:17 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "22ca1429-3014-4ea1-b572-099c94450045" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '22ca1429-3014-4ea1-b572-099c94450045' disconnected.
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '22ca1429-3014-4ea1-b572-099c94450045' destroyed.
+Dec 07, 2018 4:44:17 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:17 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:17	127.0.0.1	22ca1429-3014-4ea1-b572-099c94450045	-	8181	GET	/api/objects/logout	-	200	90	0	81	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:17 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: 94e9b6c9-9331-400e-9974-156da14e1b67.
+Dec 07, 2018 4:44:17 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "94e9b6c9-9331-400e-9974-156da14e1b67" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user '94e9b6c9-9331-400e-9974-156da14e1b67' disconnected.
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID '94e9b6c9-9331-400e-9974-156da14e1b67' destroyed.
+Dec 07, 2018 4:44:17 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:17 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:17	127.0.0.1	94e9b6c9-9331-400e-9974-156da14e1b67	-	8181	GET	/api/objects/logout	-	200	90	0	70	http://localhost:8181	Restlet-Framework/2.3.12	-
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.restapi.security.AuthenticationVerifier verify
+FINE: Valid credentials received from a client with IP 127.0.0.1.
+Dec 07, 2018 4:44:17 PM org.restlet.security.ChallengeAuthenticator authenticate
+FINE: Authentication succeeded. Valid credentials provided for identifier: b7aecd4e-3438-4536-877d-8ddce998101a.
+Dec 07, 2018 4:44:17 PM org.restlet.security.Authenticator authenticated
+FINE: The authentication succeeded for the identifer "b7aecd4e-3438-4536-877d-8ddce998101a" using the HTTP_Basic scheme.
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/login" URI pattern: 0.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute score
+FINER: Call score for the "/objects/logout" URI pattern: 1.0
+Dec 07, 2018 4:44:17 PM org.restlet.routing.Router logRoute
+FINE: Selected route: "/objects/logout" -> Finder for ObjectsLogout
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: 15 characters were matched
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINE: New base URI: "http://localhost:8181/api/objects/logout". No remaining part to match
+Dec 07, 2018 4:44:17 PM org.restlet.routing.TemplateRoute beforeHandle
+FINER: Delegating the call to the target Restlet
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreAnnotation
+FINE: Score of annotation "MethodAnnotationInfo [javaMethod: public org.restlet.representation.Representation eu.bavenir.ogwapi.restapi.services.ObjectsLogout.represent(), javaClass: class eu.bavenir.ogwapi.restapi.services.ObjectsLogout, restletMethod: GET, input: null, value: null, output: null, query: null]"= 0.5
+Dec 07, 2018 4:44:17 PM org.restlet.engine.application.StrictConneg scoreVariant
+FINE: Total score of variant "[*/*]"= 0.041791666
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.engines.xmpp.XmppMessageEngine disconnect
+FINE: XMPP user 'b7aecd4e-3438-4536-877d-8ddce998101a' disconnected.
+Dec 07, 2018 4:44:17 PM eu.bavenir.ogwapi.commons.CommunicationManager terminateConnection
+INFO: Connection for object ID 'b7aecd4e-3438-4536-877d-8ddce998101a' destroyed.
+Dec 07, 2018 4:44:17 PM org.restlet.service.ConverterService toRepresentation
+FINE: Converter selected for JsonRepresentation: DefaultConverter
+Dec 07, 2018 4:44:17 PM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2018-12-07	16:44:17	127.0.0.1	b7aecd4e-3438-4536-877d-8ddce998101a	-	8181	GET	/api/objects/logout	-	200	90	0	94	http://localhost:8181	Restlet-Framework/2.3.12	-
+Vicinity Gateway API: Shutdown hook run, terminating threads.
+Vicinity Gateway API: Stopping RESTLET component.

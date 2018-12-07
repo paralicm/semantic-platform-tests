@@ -22,8 +22,9 @@ public class AutoDiscoveryFunctionalTest {
     private static final Logger LOG = Logger.getLogger(AutoDiscoveryFunctionalTest.class);
 
     private static String[] agentIDs = new String[]{
-            "16f44b57-c22c-4774-8970-40bc29c84471",
-            "c2ea4521-7663-4246-a449-fe3d05175988"
+            "c2ea4521-7663-4246-a449-fe3d05175988",
+            "5f14461d-06ce-4ee6-96cd-fdca76cfdd16",
+            "b7aecd4e-3438-4536-877d-8ddce998101a"
     };
     private static String[] agentConfigs = new String[]{
 //            "td-sample.json"
